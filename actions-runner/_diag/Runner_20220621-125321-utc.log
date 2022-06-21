@@ -343,3 +343,13 @@ Date: Tue, 21 Jun 2022 12:53:24 GMT
 [2022-06-21 12:54:34Z INFO JobNotification] Entering JobCompleted Notification
 [2022-06-21 12:54:34Z INFO JobNotification] Entering EndMonitor
 [2022-06-21 13:24:32Z INFO MessageListener] No message retrieved from session 'dfce5a43-6775-4065-b34d-70cbae99dfac' within last 30 minutes.
+[2022-06-21 13:40:55Z INFO Terminal] WRITE LINE: Exiting...
+[2022-06-21 13:40:55Z INFO ConfigurationStore] IsServiceConfigured()
+[2022-06-21 13:40:55Z INFO ConfigurationStore] IsServiceConfigured: False
+[2022-06-21 13:40:55Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2022-06-21 13:40:55Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi/_apis/distributedtask/pools/1/messages?sessionId=dfce5a43-6775-4065-b34d-70cbae99dfac&lastMessageId=6 has been cancelled.
+[2022-06-21 13:40:55Z INFO MessageListener] Get next message has been cancelled.
+[2022-06-21 13:40:55Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2022-06-21 13:40:55Z INFO JobDispatcher] Ensure WorkerDispather for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 run to finish, cancel any running job.
+[2022-06-21 13:40:55Z INFO JobDispatcher] Job request 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 processed succeed.
+[2022-06-21 13:40:56Z INFO Listener] Runner execution been cancelled.
