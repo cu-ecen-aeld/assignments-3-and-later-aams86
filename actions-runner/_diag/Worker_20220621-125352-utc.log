@@ -1,0 +1,2020 @@
+[2022-06-21 12:53:52Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2022-06-21 12:53:52Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:52Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:52Z INFO HostContext] Well known config file 'Credentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials'
+[2022-06-21 12:53:53Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:53Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:53Z INFO HostContext] Well known config file 'Runner': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.runner'
+[2022-06-21 12:53:53Z INFO Worker] Version: 2.293.0
+[2022-06-21 12:53:53Z INFO Worker] Commit: 7785d8e1045339fbc88b92c9b506d35ed2b7523c
+[2022-06-21 12:53:53Z INFO Worker] Culture: 
+[2022-06-21 12:53:53Z INFO Worker] UI Culture: 
+[2022-06-21 12:53:53Z INFO Worker] Waiting to receive the job message from the channel.
+[2022-06-21 12:53:53Z INFO ProcessChannel] Receiving message of length 22942, with hash '964315c4e50ac0f42b5974c0a015852758f18b578c0412e29d74e246070bcb30'
+[2022-06-21 12:53:53Z INFO Worker] Message received.
+[2022-06-21 12:53:53Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/github-actions.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v2",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "5ae3cfb7-d7d4-55cf-e765-f7829c54f157",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 18,
+        "col": 19,
+        "lit": "Checkout submodules"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 19,
+              "col": 19,
+              "lit": "git submodule update --init --recursive"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "0358dd64-d4c6-52fe-1d1f-54fa3c1bbc5e",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 20,
+        "col": 19,
+        "lit": "Run full test"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 21,
+              "col": 18,
+              "lit": "./full-test.sh"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "65a7d644-3062-544f-df76-4b95bcf50146",
+      "name": "__run_2"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": "en-US"
+    },
+    "system.pipelineStartTime": {
+      "value": "2022-06-21 12:53:50+00:00"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "2"
+    },
+    "build.containerId": {
+      "value": "52657"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/github-actions.yml"
+    },
+    "system.phaseDisplayName": {
+      "value": "full-test"
+    },
+    "system.phaseId": {
+      "value": "ab5579c2-8327-5dba-a8ef-b554bdd0f462"
+    },
+    "system.phaseName": {
+      "value": "full-test"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "full-test.__default"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1"
+    },
+    "system.github.job": {
+      "value": "full-test"
+    },
+    "system.jobDisplayName": {
+      "value": "full-test"
+    },
+    "system.jobId": {
+      "value": "a047640a-23da-5e9b-1ef8-917a09b3753a"
+    },
+    "system.jobName": {
+      "value": "__default"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Actions\":\"write\",\"Checks\":\"write\",\"Contents\":\"write\",\"Deployments\":\"write\",\"Discussions\":\"write\",\"Issues\":\"write\",\"Metadata\":\"read\",\"Packages\":\"write\",\"Pages\":\"write\",\"PullRequests\":\"write\",\"RepositoryProjects\":\"write\",\"SecurityEvents\":\"write\",\"Statuses\":\"write\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 26,
+    "planId": "f1aebb95-3a9c-4aec-9722-06d1619c68bb",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/2",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "assignment-2-aams86"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "cu-ecen-aeld"
+    }
+  },
+  "timeline": {
+    "id": "f1aebb95-3a9c-4aec-9722-06d1619c68bb",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "a047640a-23da-5e9b-1ef8-917a09b3753a",
+  "jobDisplayName": "full-test",
+  "jobName": "__default",
+  "jobContainer": {
+    "type": 0,
+    "file": 1,
+    "line": 14,
+    "col": 20,
+    "lit": "cuaesd/aesd-autotest:assignment2"
+  },
+  "requestId": 3,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "fd58f1e0-07ef-4d8a-b595-27880f9f2042",
+          "ServerName": "cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi/",
+          "FeedStreamUrl": "https://pipelines.actions.githubusercontent.com/cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/f1aebb95-3a9c-4aec-9722-06d1619c68bb/timelines/f1aebb95-3a9c-4aec-9722-06d1619c68bb/records/a047640a-23da-5e9b-1ef8-917a09b3753a/feedstream?api-version=6.0-preview"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelines.actions.githubusercontent.com/cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/master"
+        },
+        {
+          "k": "sha",
+          "v": "1c6b3ead1a0a28183e8e15703a079a6fa519f168"
+        },
+        {
+          "k": "repository",
+          "v": "cu-ecen-aeld/assignment-2-aams86"
+        },
+        {
+          "k": "repository_owner",
+          "v": "cu-ecen-aeld"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "49594950"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/cu-ecen-aeld/assignment-2-aams86.git"
+        },
+        {
+          "k": "run_id",
+          "v": "2535494166"
+        },
+        {
+          "k": "run_number",
+          "v": "2"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_id",
+          "v": "505832992"
+        },
+        {
+          "k": "actor_id",
+          "v": "20014178"
+        },
+        {
+          "k": "actor",
+          "v": "aams86"
+        },
+        {
+          "k": "workflow",
+          "v": "assignment-test"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "1c6b3ead1a0a28183e8e15703a079a6fa519f168"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "0000000000000000000000000000000000000000"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "aams86@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "aams86"
+                              },
+                              {
+                                "k": "username",
+                                "v": "aams86"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "aams86@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "aams86"
+                              },
+                              {
+                                "k": "username",
+                                "v": "aams86"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "e6b9e00c9fe66fa4dce7e69c92e2116527a912d0"
+                        },
+                        {
+                          "k": "message",
+                          "v": "completed assignment 1"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2022-06-20T09:21:12-07:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "c1e0a18f42334d9094e6305e9ad188c9e29854a3"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/e6b9e00c9fe66fa4dce7e69c92e2116527a912d0"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "aams86@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "aams86"
+                              },
+                              {
+                                "k": "username",
+                                "v": "aams86"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "aams86@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "aams86"
+                              },
+                              {
+                                "k": "username",
+                                "v": "aams86"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "1c6b3ead1a0a28183e8e15703a079a6fa519f168"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Merge remote-tracking branch 'assignments-base/assignment2'"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2022-06-21T05:46:18-07:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "54f2da2fe7e0d90fed1f8baec288187541f113f3"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/1c6b3ead1a0a28183e8e15703a079a6fa519f168"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/compare/e6b9e00c9fe6^...1c6b3ead1a0a"
+              },
+              {
+                "k": "created",
+                "v": true
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "aams86@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "aams86"
+                          },
+                          {
+                            "k": "username",
+                            "v": "aams86"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "aams86@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "aams86"
+                          },
+                          {
+                            "k": "username",
+                            "v": "aams86"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "1c6b3ead1a0a28183e8e15703a079a6fa519f168"
+                    },
+                    {
+                      "k": "message",
+                      "v": "Merge remote-tracking branch 'assignments-base/assignment2'"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2022-06-21T05:46:18-07:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "54f2da2fe7e0d90fed1f8baec288187541f113f3"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/1c6b3ead1a0a28183e8e15703a079a6fa519f168"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "organization",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/49594950?v=4"
+                    },
+                    {
+                      "k": "description",
+                      "v": "Course Github Organization for University of Colorado at Boulder ECEN 5713 Advanced Embedded Software Development (previously 5013-002)"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/events"
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/hooks"
+                    },
+                    {
+                      "k": "id",
+                      "v": 49594950.0
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/issues"
+                    },
+                    {
+                      "k": "login",
+                      "v": "cu-ecen-aeld"
+                    },
+                    {
+                      "k": "members_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/members{/member}"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDEyOk9yZ2FuaXphdGlvbjQ5NTk0OTUw"
+                    },
+                    {
+                      "k": "public_members_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/public_members{/member}"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/repos"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "aams86@gmail.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "aams86"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/master"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1655814390.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "assignment-2-aams86 created by GitHub Classroom"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "cu-ecen-aeld/assignment-2-aams86"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/cu-ecen-aeld/assignment-2-aams86.git"
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86"
+                    },
+                    {
+                      "k": "id",
+                      "v": 505832992.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "key",
+                            "v": "mit"
+                          },
+                          {
+                            "k": "name",
+                            "v": "MIT License"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDc6TGljZW5zZTEz"
+                          },
+                          {
+                            "k": "spdx_id",
+                            "v": "MIT"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/licenses/mit"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "assignment-2-aams86"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOHiZmIA"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "organization",
+                      "v": "cu-ecen-aeld"
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/49594950?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": null
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/cu-ecen-aeld"
+                          },
+                          {
+                            "k": "id",
+                            "v": 49594950.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "cu-ecen-aeld"
+                          },
+                          {
+                            "k": "name",
+                            "v": "cu-ecen-aeld"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDEyOk9yZ2FuaXphdGlvbjQ5NTk0OTUw"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "Organization"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1655815621.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:cu-ecen-aeld/assignment-2-aams86.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2022-06-21T12:40:48Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/20014178?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/aams86/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/aams86/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/aams86/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/aams86/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/aams86"
+                    },
+                    {
+                      "k": "id",
+                      "v": 20014178.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "aams86"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjIwMDE0MTc4"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/aams86/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/aams86/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/aams86/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/aams86/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/aams86/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/aams86"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "master"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        }
+      ]
+    },
+    "needs": {
+      "t": 2
+    },
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    }
+  }
+}
+[2022-06-21 12:53:54Z INFO JobRunner] Job ID a047640a-23da-5e9b-1ef8-917a09b3753a
+[2022-06-21 12:53:54Z INFO JobRunner] Creating job server with URL: https://pipelines.actions.githubusercontent.com/cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi/
+[2022-06-21 12:53:54Z INFO ConfigurationStore] currentAssemblyLocation: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin/Runner.Worker.dll
+[2022-06-21 12:53:54Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:54Z INFO ConfigurationStore] binPath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin
+[2022-06-21 12:53:54Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:54Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:54Z INFO ConfigurationStore] RootFolder: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner
+[2022-06-21 12:53:54Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:54Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:54Z INFO HostContext] Well known config file 'Runner': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.runner'
+[2022-06-21 12:53:54Z INFO ConfigurationStore] ConfigFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.runner
+[2022-06-21 12:53:54Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:54Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:54Z INFO HostContext] Well known config file 'Credentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials'
+[2022-06-21 12:53:54Z INFO ConfigurationStore] CredFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials
+[2022-06-21 12:53:54Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:54Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:54Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_migrated'
+[2022-06-21 12:53:54Z INFO ConfigurationStore] MigratedCredFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_migrated
+[2022-06-21 12:53:54Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:54Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:54Z INFO HostContext] Well known config file 'Service': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.service'
+[2022-06-21 12:53:54Z INFO ConfigurationStore] ServiceConfigFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.service
+[2022-06-21 12:53:54Z INFO ConfigurationStore] Read setting file: 295 chars
+[2022-06-21 12:53:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-06-21 12:53:54Z INFO Worker] Listening for cancel message from the channel.
+[2022-06-21 12:53:54Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2022-06-21 12:53:55Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-06-21 12:53:55Z INFO JobServer] Creating websocket client ...wss://pipelines.actions.githubusercontent.com/cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/f1aebb95-3a9c-4aec-9722-06d1619c68bb/timelines/f1aebb95-3a9c-4aec-9722-06d1619c68bb/records/a047640a-23da-5e9b-1ef8-917a09b3753a/feedstream?api-version=6.0-preview
+[2022-06-21 12:53:55Z INFO JobServer] Attempting to start websocket client with delay 00:00:00.
+[2022-06-21 12:53:55Z INFO JobServerQueue] Start process web console line queue.
+[2022-06-21 12:53:55Z INFO JobServerQueue] Start process file upload queue.
+[2022-06-21 12:53:55Z INFO JobServerQueue] Start process timeline update queue.
+[2022-06-21 12:53:55Z INFO ExecutionContext] Initialize GitHub context
+[2022-06-21 12:53:55Z INFO ExecutionContext] Initialize Env context
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:55Z INFO JobRunner] Starting the job execution context.
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:55Z INFO JobRunner] Validating directory permissions for: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Tools': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_tool'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Temp': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_temp'
+[2022-06-21 12:53:55Z INFO JobRunner] Getting job extension.
+[2022-06-21 12:53:55Z INFO JobRunner] Initialize job. Getting all job steps.
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known config file 'Credentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known config file 'SetupInfo': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.setup_info'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:55Z INFO PipelineDirectoryManager] Loading tracking config if exists: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_PipelineMapping/cu-ecen-aeld/assignment-2-aams86/PipelineFolder.json
+[2022-06-21 12:53:55Z INFO PipelineDirectoryManager] Updating job run properties.
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:55Z INFO JobServer] Successfully started websocket client.
+[2022-06-21 12:53:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d2343b9-43f9-4767-b196-c9ed8696b42c', success rate: 1/1.
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Tools': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_tool'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Externals': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/externals'
+[2022-06-21 12:53:55Z INFO JobExtension] Downloading actions
+[2022-06-21 12:53:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d2343b9-43f9-4767-b196-c9ed8696b42c', success rate: 1/1.
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:55Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d2343b9-43f9-4767-b196-c9ed8696b42c', success rate: 1/1.
+[2022-06-21 12:53:56Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2022-06-21 12:53:56Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:56Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:56Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:56Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:56Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:56Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:56Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:56Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:56Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/tarball/7884fcad6b5d53d10323aee724dc68d8b9096a2e' into /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions/_temp_0ed65d0f-8af3-4e26-8ef2-e9c430e95068/d01ed722-5cb9-46e8-a892-f428f7fc016e.tar.gz.
+[2022-06-21 12:53:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d2343b9-43f9-4767-b196-c9ed8696b42c', success rate: 1/1.
+[2022-06-21 12:53:57Z INFO ActionManager] Which: 'tar'
+[2022-06-21 12:53:57Z INFO ActionManager] Location: '/usr/bin/tar'
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper] Starting process:
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions/_temp_0ed65d0f-8af3-4e26-8ef2-e9c430e95068/d01ed722-5cb9-46e8-a892-f428f7fc016e.tar.gz"'
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper]   Working directory: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions/_temp_0ed65d0f-8af3-4e26-8ef2-e9c430e95068/_staging'
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 29318.
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper] Process started with process id 29318, waiting for process exit.
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:57Z INFO ProcessInvokerWrapper] Finished process 29318 with exit code 0, and elapsed time 00:00:00.0521683.
+[2022-06-21 12:53:57Z INFO ActionManager] Finished getting action repository.
+[2022-06-21 12:53:57Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:57Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:57Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:57Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:57Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2022-06-21 12:53:57Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:57Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:57Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:57Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:58Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2022-06-21 12:53:58Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:58Z INFO ActionManager] Load action that reference repository from '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions/actions/checkout/v2'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:58Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2022-06-21 12:53:58Z INFO ActionManager] Action pre node.js file: N/A.
+[2022-06-21 12:53:58Z INFO ActionManager] Action node.js file: dist/index.js.
+[2022-06-21 12:53:58Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2022-06-21 12:53:58Z INFO DockerCommandManager] Which: 'docker'
+[2022-06-21 12:53:58Z INFO DockerCommandManager] Location: '/usr/bin/docker'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:58Z INFO JobExtension] Adding .
+[2022-06-21 12:53:58Z INFO JobExtension] Adding .
+[2022-06-21 12:53:58Z INFO JobExtension] Adding .
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:58Z INFO JobExtension] Total accessible running process: 156.
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:58Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "3d2343b9-43f9-4767-b196-c9ed8696b42c",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 3
+}.
+[2022-06-21 12:53:58Z INFO JobRunner] Total job steps: 4.
+[2022-06-21 12:53:58Z INFO JobRunner] Run all job steps.
+[2022-06-21 12:53:58Z INFO StepsRunner] Processing step: DisplayName='Initialize containers'
+[2022-06-21 12:53:58Z INFO StepsRunner] Evaluating: success()
+[2022-06-21 12:53:58Z INFO StepsRunner] Result: true
+[2022-06-21 12:53:58Z INFO StepsRunner] Starting the step.
+[2022-06-21 12:53:58Z INFO ExecutionContext] Reserve record order 6 to 10 for post job actions.
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper] Starting process:
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper]   Arguments: 'version --format '{{.Server.APIVersion}}''
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper]   Working directory: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/assignment-2-aams86/assignment-2-aams86'
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 29321.
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper] Process started with process id 29321, waiting for process exit.
+[2022-06-21 12:53:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '98ddd904-d5f1-4b27-ab94-bfa36571eab6', success rate: 1/1.
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:58Z INFO ProcessInvokerWrapper] Finished process 29321 with exit code 1, and elapsed time 00:00:00.0869907.
+[2022-06-21 12:53:58Z ERR  StepsRunner] Caught exception from step: GitHub.Runner.Sdk.ProcessExitCodeException: Exit code 1 returned from process: file name '/usr/bin/docker', arguments 'version --format '{{.Server.APIVersion}}''.
+   at GitHub.Runner.Sdk.ProcessInvoker.ExecuteAsync(String workingDirectory, String fileName, String arguments, IDictionary`2 environment, Boolean requireExitCodeZero, Encoding outputEncoding, Boolean killProcessOnCancel, Channel`1 redirectStandardIn, Boolean inheritConsoleHandler, Boolean keepStandardInOpen, Boolean highPriorityProcess, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.ProcessInvokerWrapper.ExecuteAsync(String workingDirectory, String fileName, String arguments, IDictionary`2 environment, Boolean requireExitCodeZero, Encoding outputEncoding, Boolean killProcessOnCancel, Channel`1 redirectStandardIn, Boolean inheritConsoleHandler, Boolean keepStandardInOpen, Boolean highPriorityProcess, CancellationToken cancellationToken)
+   at GitHub.Runner.Worker.Container.DockerCommandManager.ExecuteDockerCommandAsync(IExecutionContext context, String command, String options)
+   at GitHub.Runner.Worker.Container.DockerCommandManager.DockerVersion(IExecutionContext context)
+   at GitHub.Runner.Worker.ContainerOperationProvider.AssertCompatibleOS(IExecutionContext executionContext)
+   at GitHub.Runner.Worker.ContainerOperationProvider.StartContainersAsync(IExecutionContext executionContext, Object data)
+   at GitHub.Runner.Worker.JobExtensionRunner.RunAsync()
+   at GitHub.Runner.Worker.StepsRunner.RunStepAsync(IStep step, CancellationToken jobCancellationToken)
+[2022-06-21 12:53:58Z INFO StepsRunner] Step result: Failed
+[2022-06-21 12:53:58Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "initialize_containers",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "98ddd904-d5f1-4b27-ab94-bfa36571eab6",
+  "result": "failed",
+  "errorMessages": [
+    "Exit code 1 returned from process: file name '/usr/bin/docker', arguments 'version --format '{{.Server.APIVersion}}''."
+  ],
+  "executionTimeInSeconds": 1
+}.
+[2022-06-21 12:53:58Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2022-06-21 12:53:58Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-06-21 12:53:58Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v2'
+[2022-06-21 12:53:58Z INFO StepsRunner] Evaluating: success()
+[2022-06-21 12:53:58Z INFO StepsRunner] Result: false
+[2022-06-21 12:53:58Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2022-06-21 12:53:58Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2022-06-21 12:53:58Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-06-21 12:53:58Z INFO StepsRunner] Processing step: DisplayName='Checkout submodules'
+[2022-06-21 12:53:58Z INFO StepsRunner] Evaluating: success()
+[2022-06-21 12:53:58Z INFO StepsRunner] Result: false
+[2022-06-21 12:53:58Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2022-06-21 12:53:58Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2022-06-21 12:53:58Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-06-21 12:53:58Z INFO StepsRunner] Processing step: DisplayName='Run full test'
+[2022-06-21 12:53:58Z INFO StepsRunner] Evaluating: success()
+[2022-06-21 12:53:58Z INFO StepsRunner] Result: false
+[2022-06-21 12:53:58Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2022-06-21 12:53:58Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2022-06-21 12:53:58Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-06-21 12:53:58Z INFO StepsRunner] Processing step: DisplayName='Stop containers'
+[2022-06-21 12:53:58Z INFO StepsRunner] Evaluating: always()
+[2022-06-21 12:53:58Z INFO StepsRunner] Result: true
+[2022-06-21 12:53:58Z INFO StepsRunner] Starting the step.
+[2022-06-21 12:53:58Z ERR  StepsRunner] Caught exception from step: System.ArgumentNullException: Value cannot be null. (Parameter 'network')
+   at GitHub.Runner.Sdk.ArgUtil.NotNull(Object value, String name)
+   at GitHub.Runner.Worker.ContainerOperationProvider.RemoveContainerNetworkAsync(IExecutionContext executionContext, String network)
+   at GitHub.Runner.Worker.ContainerOperationProvider.StopContainersAsync(IExecutionContext executionContext, Object data)
+   at GitHub.Runner.Worker.JobExtensionRunner.RunAsync()
+   at GitHub.Runner.Worker.StepsRunner.RunStepAsync(IStep step, CancellationToken jobCancellationToken)
+[2022-06-21 12:53:58Z INFO StepsRunner] Step result: Failed
+[2022-06-21 12:53:58Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2022-06-21 12:53:58Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-06-21 12:53:58Z INFO JobRunner] Finalize job.
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:58Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:58Z INFO JobExtension] Initialize Env context
+[2022-06-21 12:53:58Z INFO JobExtension] Initialize steps context
+[2022-06-21 12:53:58Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2022-06-21 12:53:58Z INFO JobExtension] Total accessible running process: 156.
+[2022-06-21 12:53:58Z INFO JobExtension] Inspecting process environment variables. PID: 28333 (kworker/u8:1-flush-179:0)
+[2022-06-21 12:53:58Z INFO LinuxProcessExtensions] Read env from /proc/28333/environ
+[2022-06-21 12:53:58Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/28333/environ' is denied.
+[2022-06-21 12:53:58Z INFO JobExtension] Inspecting process environment variables. PID: 29104 (kworker/3:3-mm_percpu_wq)
+[2022-06-21 12:53:58Z INFO LinuxProcessExtensions] Read env from /proc/29104/environ
+[2022-06-21 12:53:58Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/29104/environ' is denied.
+[2022-06-21 12:53:58Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "35cf2365-7884-4492-8fe3-5a41e57bd8cc",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1
+}.
+[2022-06-21 12:53:58Z INFO JobRunner] Job result after all job steps finish: Failed
+[2022-06-21 12:53:58Z INFO JobRunner] Completing the job execution context.
+[2022-06-21 12:53:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '98ddd904-d5f1-4b27-ab94-bfa36571eab6', success rate: 1/1.
+[2022-06-21 12:53:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '893d10f7-e604-4661-858f-2888709639fa', success rate: 1/1.
+[2022-06-21 12:53:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '35cf2365-7884-4492-8fe3-5a41e57bd8cc', success rate: 1/1.
+[2022-06-21 12:53:58Z INFO JobRunner] Shutting down the job server queue.
+[2022-06-21 12:53:58Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2022-06-21 12:53:59Z INFO JobServerQueue] All queue process task stopped.
+[2022-06-21 12:53:59Z INFO JobServerQueue] Web console line queue drained.
+[2022-06-21 12:53:59Z INFO JobServerQueue] Uploading 4 files in one shot.
+[2022-06-21 12:54:00Z INFO JobServerQueue] Try to upload 4 log files or attachments, success rate: 4/4.
+[2022-06-21 12:54:00Z INFO JobServerQueue] File upload queue drained.
+[2022-06-21 12:54:00Z INFO JobServerQueue] Timeline update queue drained.
+[2022-06-21 12:54:00Z INFO JobServerQueue] Disposing job server ...
+[2022-06-21 12:54:00Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2022-06-21 12:54:00Z INFO TempDirectoryManager] Cleaning runner temp folder: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_temp
+[2022-06-21 12:54:00Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:54:00Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:54:00Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:54:00Z INFO HostContext] Well known config file 'Telemetry': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag/.telemetry'
+[2022-06-21 12:54:00Z INFO JobRunner] Raising job completed event
+[2022-06-21 12:54:00Z INFO Worker] Job completed.

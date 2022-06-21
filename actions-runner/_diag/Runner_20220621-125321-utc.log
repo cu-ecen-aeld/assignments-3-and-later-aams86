@@ -1,0 +1,345 @@
+[2022-06-21 12:53:21Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2022-06-21 12:53:21Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:21Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:21Z INFO HostContext] Well known config file 'Credentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials'
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:22Z INFO HostContext] Well known config file 'Runner': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.runner'
+[2022-06-21 12:53:22Z INFO Listener] Runner is built for Linux (Arm) - linux-arm.
+[2022-06-21 12:53:22Z INFO Listener] RuntimeInformation: Linux 5.4.0-1052-raspi #58-Ubuntu SMP PREEMPT Mon Feb 7 16:56:27 UTC 2022.
+[2022-06-21 12:53:22Z INFO Listener] Version: 2.293.0
+[2022-06-21 12:53:22Z INFO Listener] Commit: 7785d8e1045339fbc88b92c9b506d35ed2b7523c
+[2022-06-21 12:53:22Z INFO Listener] Culture: 
+[2022-06-21 12:53:22Z INFO Listener] UI Culture: 
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:22Z INFO Listener] Validating directory permissions for: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:22Z INFO CommandLineParser] Parse
+[2022-06-21 12:53:22Z INFO CommandLineParser] Parsing 1 args
+[2022-06-21 12:53:22Z INFO CommandLineParser] parsing argument
+[2022-06-21 12:53:22Z INFO CommandLineParser] HasArgs: False
+[2022-06-21 12:53:22Z INFO CommandLineParser] Adding Command: run
+[2022-06-21 12:53:22Z INFO Listener] Arguments parsed
+[2022-06-21 12:53:22Z INFO Runner] ExecuteCommand
+[2022-06-21 12:53:22Z INFO ConfigurationStore] currentAssemblyLocation: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin/Runner.Listener.dll
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:22Z INFO ConfigurationStore] binPath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:22Z INFO ConfigurationStore] RootFolder: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:22Z INFO HostContext] Well known config file 'Runner': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.runner'
+[2022-06-21 12:53:22Z INFO ConfigurationStore] ConfigFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.runner
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:22Z INFO HostContext] Well known config file 'Credentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials'
+[2022-06-21 12:53:22Z INFO ConfigurationStore] CredFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:22Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_migrated'
+[2022-06-21 12:53:22Z INFO ConfigurationStore] MigratedCredFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_migrated
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:22Z INFO HostContext] Well known config file 'Service': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.service'
+[2022-06-21 12:53:22Z INFO ConfigurationStore] ServiceConfigFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.service
+[2022-06-21 12:53:22Z INFO CommandSettings] Flag 'help': 'False'
+[2022-06-21 12:53:22Z INFO CommandSettings] Flag 'version': 'False'
+[2022-06-21 12:53:22Z INFO CommandSettings] Flag 'commit': 'False'
+[2022-06-21 12:53:22Z INFO CommandSettings] Flag 'check': 'False'
+[2022-06-21 12:53:22Z INFO CommandSettings] Command 'configure': 'False'
+[2022-06-21 12:53:22Z INFO CommandSettings] Command 'remove': 'False'
+[2022-06-21 12:53:22Z INFO CommandSettings] Command 'warmup': 'False'
+[2022-06-21 12:53:22Z INFO ConfigurationManager] LoadSettings
+[2022-06-21 12:53:22Z INFO ConfigurationStore] IsConfigured()
+[2022-06-21 12:53:22Z INFO ConfigurationStore] IsConfigured: True
+[2022-06-21 12:53:22Z INFO ConfigurationManager] Is configured: True
+[2022-06-21 12:53:22Z INFO ConfigurationStore] Read setting file: 295 chars
+[2022-06-21 12:53:22Z INFO ConfigurationManager] Settings Loaded
+[2022-06-21 12:53:22Z INFO ConfigurationStore] IsServiceConfigured()
+[2022-06-21 12:53:22Z INFO ConfigurationStore] IsServiceConfigured: False
+[2022-06-21 12:53:22Z INFO CommandSettings] Command 'run': 'True'
+[2022-06-21 12:53:22Z INFO ConfigurationStore] IsConfigured()
+[2022-06-21 12:53:22Z INFO ConfigurationStore] IsConfigured: True
+[2022-06-21 12:53:22Z INFO ConfigurationManager] Is configured: True
+[2022-06-21 12:53:22Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2022-06-21 12:53:22Z INFO Runner] Set runner startup type - Manual
+[2022-06-21 12:53:22Z INFO CommandSettings] Flag 'once': 'False'
+[2022-06-21 12:53:22Z INFO CommandSettings] Flag 'once': 'False'
+[2022-06-21 12:53:22Z INFO Runner] RunAsync
+[2022-06-21 12:53:22Z INFO ConfigurationManager] LoadSettings
+[2022-06-21 12:53:22Z INFO ConfigurationStore] IsConfigured()
+[2022-06-21 12:53:22Z INFO ConfigurationStore] IsConfigured: True
+[2022-06-21 12:53:22Z INFO ConfigurationManager] Is configured: True
+[2022-06-21 12:53:22Z INFO ConfigurationManager] Settings Loaded
+[2022-06-21 12:53:22Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "rpi002",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi",
+  "GitHubUrl": "https://github.com/cu-ecen-aeld/assignment-2-aams86",
+  "WorkFolder": "_work"
+}
+[2022-06-21 12:53:22Z INFO MessageListener] Loading Credentials
+[2022-06-21 12:53:22Z INFO ConfigurationStore] HasCredentials()
+[2022-06-21 12:53:22Z INFO ConfigurationStore] stored True
+[2022-06-21 12:53:22Z INFO CredentialManager] GetCredentialProvider
+[2022-06-21 12:53:22Z INFO CredentialManager] Creating type OAuth
+[2022-06-21 12:53:22Z INFO CredentialManager] Creating credential type: OAuth
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:22Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:22Z INFO HostContext] Well known config file 'RSACredentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams'
+[2022-06-21 12:53:22Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:53:22Z INFO MessageListener] Attempt to create session.
+[2022-06-21 12:53:22Z INFO MessageListener] Connecting to the Runner Server...
+[2022-06-21 12:53:22Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2022-06-21 12:53:22Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-06-21 12:53:23Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-06-21 12:53:23Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-06-21 12:53:23Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-06-21 12:53:23Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-06-21 12:53:23Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-06-21 12:53:23Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-06-21 12:53:23Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-06-21 12:53:24Z INFO MessageListener] VssConnection created
+[2022-06-21 12:53:24Z INFO Terminal] WRITE LINE: 
+[2022-06-21 12:53:24Z INFO Terminal] WRITE LINE: 
+[2022-06-21 12:53:24Z WARN GitHubActionsService] Authentication failed with status code 401.
+Transfer-Encoding: chunked
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 39e4b602-7d80-4cc8-82a2-24b21b831f8f
+ActivityId: 7cf76da3-0929-4b88-a03e-b11c29d43654
+X-TFS-Session: 4795fc8e-3737-4388-addc-18587957a82f
+X-VSS-E2EID: 20b98379-ad4d-4baa-845c-ce61a676f298
+X-VSS-SenderDeploymentId: fc1cfc90-fc40-edcb-6d0f-3b1380ee7b68
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 96AC3449570B41E19F6CDA460B1E68D6 Ref B: LAX311000110019 Ref C: 2022-06-21T12:53:24Z
+Date: Tue, 21 Jun 2022 12:53:24 GMT
+
+[2022-06-21 12:53:24Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:53:24Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:53:24Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2022-06-21 12:53:25Z INFO MessageListener] Session created.
+[2022-06-21 12:53:25Z INFO Terminal] WRITE LINE: Current runner version: '2.293.0'
+[2022-06-21 12:53:25Z INFO Terminal] WRITE LINE: 2022-06-21 12:53:25Z: Listening for Jobs
+[2022-06-21 12:53:25Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2022-06-21 12:53:29Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:53:29Z INFO MessageListener] Message '1' received from session 'dfce5a43-6775-4065-b34d-70cbae99dfac'.
+[2022-06-21 12:53:29Z INFO Runner] Received job message of length 34743 from service, with hash '6ecdef1c1e647a0f76f3666b57f91bbc99ce502961bf206d917b78fec716ef47'
+[2022-06-21 12:53:29Z INFO JobDispatcher] Job request 1 for plan 630ea758-d1cc-4817-89f3-498f056a04cd job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 received.
+[2022-06-21 12:53:29Z INFO JobDispatcher] Pull OrchestrationId 630ea758-d1cc-4817-89f3-498f056a04cd.unit-test.__default from JWT claims
+[2022-06-21 12:53:29Z INFO Terminal] WRITE LINE: 2022-06-21 12:53:29Z: Running job: unit-test
+[2022-06-21 12:53:29Z INFO JobDispatcher] Start renew job request 1 for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2022-06-21 12:53:29Z INFO JobDispatcher] Successfully renew job request 1, job is valid till 06/21/2022 13:03:29
+[2022-06-21 12:53:29Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:29Z INFO ProcessInvokerWrapper] Starting process:
+[2022-06-21 12:53:29Z INFO ProcessInvokerWrapper]   File name: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin/Runner.Worker'
+[2022-06-21 12:53:29Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 105 108'
+[2022-06-21 12:53:29Z INFO ProcessInvokerWrapper]   Working directory: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:29Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-06-21 12:53:29Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-06-21 12:53:29Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2022-06-21 12:53:29Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-06-21 12:53:29Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-06-21 12:53:29Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-06-21 12:53:29Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2022-06-21 12:53:29Z INFO ProcessInvokerWrapper] Process started with process id 29242, waiting for process exit.
+[2022-06-21 12:53:29Z INFO JobDispatcher] Send job request message to worker for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2022-06-21 12:53:29Z INFO ProcessChannel] Sending message of length 34743, with hash '6ecdef1c1e647a0f76f3666b57f91bbc99ce502961bf206d917b78fec716ef47'
+[2022-06-21 12:53:30Z INFO JobNotification] Entering JobStarted Notification
+[2022-06-21 12:53:30Z INFO JobNotification] Entering StartMonitor
+[2022-06-21 12:53:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:38Z INFO ProcessInvokerWrapper] Finished process 29242 with exit code 102, and elapsed time 00:00:09.1140378.
+[2022-06-21 12:53:38Z INFO JobDispatcher] Worker finished for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171. Code: 102
+[2022-06-21 12:53:38Z INFO JobDispatcher] finish job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 with result: Failed
+[2022-06-21 12:53:38Z INFO Terminal] WRITE LINE: 2022-06-21 12:53:38Z: Job unit-test completed with result: Failed
+[2022-06-21 12:53:38Z INFO JobDispatcher] Stop renew job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2022-06-21 12:53:38Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 1.
+[2022-06-21 12:53:38Z INFO JobNotification] Entering JobCompleted Notification
+[2022-06-21 12:53:38Z INFO JobNotification] Entering EndMonitor
+[2022-06-21 12:53:41Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:53:41Z INFO MessageListener] Message '2' received from session 'dfce5a43-6775-4065-b34d-70cbae99dfac'.
+[2022-06-21 12:53:41Z INFO Runner] Received job message of length 34747 from service, with hash '40cbdf9d62df7c07f3d8e2dd8e8af28d338b264668b1aa9d008815e913aa547a'
+[2022-06-21 12:53:41Z INFO JobDispatcher] Job request 2 for plan 630ea758-d1cc-4817-89f3-498f056a04cd job a047640a-23da-5e9b-1ef8-917a09b3753a received.
+[2022-06-21 12:53:41Z INFO JobDispatcher] Pull OrchestrationId 630ea758-d1cc-4817-89f3-498f056a04cd.full-test.__default from JWT claims
+[2022-06-21 12:53:41Z INFO JobDispatcher] Job request 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 processed succeed.
+[2022-06-21 12:53:41Z INFO Terminal] WRITE LINE: 2022-06-21 12:53:41Z: Running job: full-test
+[2022-06-21 12:53:41Z INFO JobDispatcher] Start renew job request 2 for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2022-06-21 12:53:41Z INFO JobDispatcher] Successfully renew job request 2, job is valid till 06/21/2022 13:03:41
+[2022-06-21 12:53:41Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:41Z INFO ProcessInvokerWrapper] Starting process:
+[2022-06-21 12:53:41Z INFO ProcessInvokerWrapper]   File name: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin/Runner.Worker'
+[2022-06-21 12:53:41Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 106 110'
+[2022-06-21 12:53:41Z INFO ProcessInvokerWrapper]   Working directory: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:41Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-06-21 12:53:41Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-06-21 12:53:41Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2022-06-21 12:53:41Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-06-21 12:53:41Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-06-21 12:53:41Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-06-21 12:53:41Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2022-06-21 12:53:41Z INFO ProcessInvokerWrapper] Process started with process id 29274, waiting for process exit.
+[2022-06-21 12:53:41Z INFO JobDispatcher] Send job request message to worker for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2022-06-21 12:53:41Z INFO ProcessChannel] Sending message of length 34747, with hash '40cbdf9d62df7c07f3d8e2dd8e8af28d338b264668b1aa9d008815e913aa547a'
+[2022-06-21 12:53:42Z INFO JobNotification] Entering JobStarted Notification
+[2022-06-21 12:53:42Z INFO JobNotification] Entering StartMonitor
+[2022-06-21 12:53:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:50Z INFO ProcessInvokerWrapper] Finished process 29274 with exit code 102, and elapsed time 00:00:08.6768936.
+[2022-06-21 12:53:50Z INFO JobDispatcher] Worker finished for job a047640a-23da-5e9b-1ef8-917a09b3753a. Code: 102
+[2022-06-21 12:53:50Z INFO JobDispatcher] finish job request for job a047640a-23da-5e9b-1ef8-917a09b3753a with result: Failed
+[2022-06-21 12:53:50Z INFO Terminal] WRITE LINE: 2022-06-21 12:53:50Z: Job full-test completed with result: Failed
+[2022-06-21 12:53:50Z INFO JobDispatcher] Stop renew job request for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2022-06-21 12:53:50Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 2.
+[2022-06-21 12:53:50Z INFO JobNotification] Entering JobCompleted Notification
+[2022-06-21 12:53:50Z INFO JobNotification] Entering EndMonitor
+[2022-06-21 12:53:52Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:53:52Z INFO MessageListener] Message '3' received from session 'dfce5a43-6775-4065-b34d-70cbae99dfac'.
+[2022-06-21 12:53:52Z INFO Runner] Received job message of length 22942 from service, with hash '964315c4e50ac0f42b5974c0a015852758f18b578c0412e29d74e246070bcb30'
+[2022-06-21 12:53:52Z INFO JobDispatcher] Job request 3 for plan f1aebb95-3a9c-4aec-9722-06d1619c68bb job a047640a-23da-5e9b-1ef8-917a09b3753a received.
+[2022-06-21 12:53:52Z INFO JobDispatcher] Pull OrchestrationId f1aebb95-3a9c-4aec-9722-06d1619c68bb.full-test.__default from JWT claims
+[2022-06-21 12:53:52Z INFO JobDispatcher] Job request a047640a-23da-5e9b-1ef8-917a09b3753a processed succeed.
+[2022-06-21 12:53:52Z INFO Terminal] WRITE LINE: 2022-06-21 12:53:52Z: Running job: full-test
+[2022-06-21 12:53:52Z INFO JobDispatcher] Start renew job request 3 for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2022-06-21 12:53:52Z INFO JobDispatcher] Successfully renew job request 3, job is valid till 06/21/2022 13:03:52
+[2022-06-21 12:53:52Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:52Z INFO ProcessInvokerWrapper] Starting process:
+[2022-06-21 12:53:52Z INFO ProcessInvokerWrapper]   File name: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin/Runner.Worker'
+[2022-06-21 12:53:52Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 106 110'
+[2022-06-21 12:53:52Z INFO ProcessInvokerWrapper]   Working directory: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:52Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-06-21 12:53:52Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-06-21 12:53:52Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2022-06-21 12:53:52Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-06-21 12:53:52Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-06-21 12:53:52Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-06-21 12:53:52Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2022-06-21 12:53:52Z INFO ProcessInvokerWrapper] Process started with process id 29302, waiting for process exit.
+[2022-06-21 12:53:52Z INFO JobDispatcher] Send job request message to worker for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2022-06-21 12:53:52Z INFO ProcessChannel] Sending message of length 22942, with hash '964315c4e50ac0f42b5974c0a015852758f18b578c0412e29d74e246070bcb30'
+[2022-06-21 12:53:52Z INFO JobNotification] Entering JobStarted Notification
+[2022-06-21 12:53:52Z INFO JobNotification] Entering StartMonitor
+[2022-06-21 12:54:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:54:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:54:00Z INFO ProcessInvokerWrapper] Finished process 29302 with exit code 102, and elapsed time 00:00:08.6625245.
+[2022-06-21 12:54:00Z INFO JobDispatcher] Worker finished for job a047640a-23da-5e9b-1ef8-917a09b3753a. Code: 102
+[2022-06-21 12:54:00Z INFO JobDispatcher] finish job request for job a047640a-23da-5e9b-1ef8-917a09b3753a with result: Failed
+[2022-06-21 12:54:00Z INFO Terminal] WRITE LINE: 2022-06-21 12:54:00Z: Job full-test completed with result: Failed
+[2022-06-21 12:54:00Z INFO JobDispatcher] Stop renew job request for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2022-06-21 12:54:00Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 3.
+[2022-06-21 12:54:00Z INFO JobNotification] Entering JobCompleted Notification
+[2022-06-21 12:54:00Z INFO JobNotification] Entering EndMonitor
+[2022-06-21 12:54:03Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:54:03Z INFO MessageListener] Message '4' received from session 'dfce5a43-6775-4065-b34d-70cbae99dfac'.
+[2022-06-21 12:54:03Z INFO Runner] Received job message of length 22938 from service, with hash 'a179e5b7866bf376917f4ef91bf929987da31ae80af7ee4d2cfb36cb223b95dc'
+[2022-06-21 12:54:03Z INFO JobDispatcher] Job request 4 for plan f1aebb95-3a9c-4aec-9722-06d1619c68bb job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 received.
+[2022-06-21 12:54:03Z INFO JobDispatcher] Pull OrchestrationId f1aebb95-3a9c-4aec-9722-06d1619c68bb.unit-test.__default from JWT claims
+[2022-06-21 12:54:03Z INFO JobDispatcher] Job request a047640a-23da-5e9b-1ef8-917a09b3753a processed succeed.
+[2022-06-21 12:54:03Z INFO Terminal] WRITE LINE: 2022-06-21 12:54:03Z: Running job: unit-test
+[2022-06-21 12:54:03Z INFO JobDispatcher] Start renew job request 4 for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2022-06-21 12:54:03Z INFO JobDispatcher] Successfully renew job request 4, job is valid till 06/21/2022 13:04:03
+[2022-06-21 12:54:03Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:54:03Z INFO ProcessInvokerWrapper] Starting process:
+[2022-06-21 12:54:03Z INFO ProcessInvokerWrapper]   File name: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin/Runner.Worker'
+[2022-06-21 12:54:03Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 106 110'
+[2022-06-21 12:54:03Z INFO ProcessInvokerWrapper]   Working directory: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:54:03Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-06-21 12:54:03Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-06-21 12:54:03Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2022-06-21 12:54:03Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-06-21 12:54:03Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-06-21 12:54:03Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-06-21 12:54:03Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2022-06-21 12:54:03Z INFO ProcessInvokerWrapper] Process started with process id 29331, waiting for process exit.
+[2022-06-21 12:54:03Z INFO JobDispatcher] Send job request message to worker for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2022-06-21 12:54:03Z INFO ProcessChannel] Sending message of length 22938, with hash 'a179e5b7866bf376917f4ef91bf929987da31ae80af7ee4d2cfb36cb223b95dc'
+[2022-06-21 12:54:03Z INFO JobNotification] Entering JobStarted Notification
+[2022-06-21 12:54:03Z INFO JobNotification] Entering StartMonitor
+[2022-06-21 12:54:11Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:54:11Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:54:11Z INFO ProcessInvokerWrapper] Finished process 29331 with exit code 102, and elapsed time 00:00:08.6606596.
+[2022-06-21 12:54:11Z INFO JobDispatcher] Worker finished for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171. Code: 102
+[2022-06-21 12:54:11Z INFO JobDispatcher] finish job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 with result: Failed
+[2022-06-21 12:54:11Z INFO Terminal] WRITE LINE: 2022-06-21 12:54:11Z: Job unit-test completed with result: Failed
+[2022-06-21 12:54:11Z INFO JobDispatcher] Stop renew job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2022-06-21 12:54:11Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 4.
+[2022-06-21 12:54:11Z INFO JobNotification] Entering JobCompleted Notification
+[2022-06-21 12:54:11Z INFO JobNotification] Entering EndMonitor
+[2022-06-21 12:54:14Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:54:14Z INFO MessageListener] Message '5' received from session 'dfce5a43-6775-4065-b34d-70cbae99dfac'.
+[2022-06-21 12:54:14Z INFO Runner] Received job message of length 23402 from service, with hash '4e0553f64b592854ada8f48af472592ab606fbfcc7f054d50ad9fc43cb840c93'
+[2022-06-21 12:54:14Z INFO JobDispatcher] Job request 5 for plan de2f01ca-b2b5-4c86-b048-3026f01f753d job a047640a-23da-5e9b-1ef8-917a09b3753a received.
+[2022-06-21 12:54:14Z INFO JobDispatcher] Pull OrchestrationId de2f01ca-b2b5-4c86-b048-3026f01f753d.full-test.__default from JWT claims
+[2022-06-21 12:54:14Z INFO JobDispatcher] Job request 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 processed succeed.
+[2022-06-21 12:54:14Z INFO Terminal] WRITE LINE: 2022-06-21 12:54:14Z: Running job: full-test
+[2022-06-21 12:54:14Z INFO JobDispatcher] Start renew job request 5 for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2022-06-21 12:54:14Z INFO JobDispatcher] Successfully renew job request 5, job is valid till 06/21/2022 13:04:14
+[2022-06-21 12:54:14Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:54:14Z INFO ProcessInvokerWrapper] Starting process:
+[2022-06-21 12:54:14Z INFO ProcessInvokerWrapper]   File name: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin/Runner.Worker'
+[2022-06-21 12:54:14Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 106 110'
+[2022-06-21 12:54:14Z INFO ProcessInvokerWrapper]   Working directory: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:54:14Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-06-21 12:54:14Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-06-21 12:54:14Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2022-06-21 12:54:14Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-06-21 12:54:14Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-06-21 12:54:14Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-06-21 12:54:14Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2022-06-21 12:54:14Z INFO ProcessInvokerWrapper] Process started with process id 29363, waiting for process exit.
+[2022-06-21 12:54:14Z INFO JobDispatcher] Send job request message to worker for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2022-06-21 12:54:14Z INFO ProcessChannel] Sending message of length 23402, with hash '4e0553f64b592854ada8f48af472592ab606fbfcc7f054d50ad9fc43cb840c93'
+[2022-06-21 12:54:14Z INFO JobNotification] Entering JobStarted Notification
+[2022-06-21 12:54:14Z INFO JobNotification] Entering StartMonitor
+[2022-06-21 12:54:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:54:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:54:22Z INFO ProcessInvokerWrapper] Finished process 29363 with exit code 102, and elapsed time 00:00:08.6476011.
+[2022-06-21 12:54:22Z INFO JobDispatcher] Worker finished for job a047640a-23da-5e9b-1ef8-917a09b3753a. Code: 102
+[2022-06-21 12:54:22Z INFO JobDispatcher] finish job request for job a047640a-23da-5e9b-1ef8-917a09b3753a with result: Failed
+[2022-06-21 12:54:22Z INFO Terminal] WRITE LINE: 2022-06-21 12:54:22Z: Job full-test completed with result: Failed
+[2022-06-21 12:54:22Z INFO JobDispatcher] Stop renew job request for job a047640a-23da-5e9b-1ef8-917a09b3753a.
+[2022-06-21 12:54:22Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 5.
+[2022-06-21 12:54:22Z INFO JobNotification] Entering JobCompleted Notification
+[2022-06-21 12:54:22Z INFO JobNotification] Entering EndMonitor
+[2022-06-21 12:54:25Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:54:25Z INFO MessageListener] Message '6' received from session 'dfce5a43-6775-4065-b34d-70cbae99dfac'.
+[2022-06-21 12:54:25Z INFO Runner] Received job message of length 23398 from service, with hash '74cf0333e58b11432e32f60f25b476bc4d4b44ccd9a4c4c4cc9a7c11809f7472'
+[2022-06-21 12:54:25Z INFO JobDispatcher] Job request 6 for plan de2f01ca-b2b5-4c86-b048-3026f01f753d job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 received.
+[2022-06-21 12:54:25Z INFO JobDispatcher] Pull OrchestrationId de2f01ca-b2b5-4c86-b048-3026f01f753d.unit-test.__default from JWT claims
+[2022-06-21 12:54:25Z INFO JobDispatcher] Job request a047640a-23da-5e9b-1ef8-917a09b3753a processed succeed.
+[2022-06-21 12:54:25Z INFO Terminal] WRITE LINE: 2022-06-21 12:54:25Z: Running job: unit-test
+[2022-06-21 12:54:25Z INFO JobDispatcher] Start renew job request 6 for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2022-06-21 12:54:25Z INFO JobDispatcher] Successfully renew job request 6, job is valid till 06/21/2022 13:04:25
+[2022-06-21 12:54:25Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:54:25Z INFO ProcessInvokerWrapper] Starting process:
+[2022-06-21 12:54:25Z INFO ProcessInvokerWrapper]   File name: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin/Runner.Worker'
+[2022-06-21 12:54:25Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 106 110'
+[2022-06-21 12:54:25Z INFO ProcessInvokerWrapper]   Working directory: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:54:25Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-06-21 12:54:25Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-06-21 12:54:25Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2022-06-21 12:54:25Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-06-21 12:54:25Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-06-21 12:54:25Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-06-21 12:54:25Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2022-06-21 12:54:25Z INFO ProcessInvokerWrapper] Process started with process id 29393, waiting for process exit.
+[2022-06-21 12:54:25Z INFO JobDispatcher] Send job request message to worker for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2022-06-21 12:54:25Z INFO ProcessChannel] Sending message of length 23398, with hash '74cf0333e58b11432e32f60f25b476bc4d4b44ccd9a4c4c4cc9a7c11809f7472'
+[2022-06-21 12:54:25Z INFO JobNotification] Entering JobStarted Notification
+[2022-06-21 12:54:25Z INFO JobNotification] Entering StartMonitor
+[2022-06-21 12:54:34Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:54:34Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:54:34Z INFO ProcessInvokerWrapper] Finished process 29393 with exit code 102, and elapsed time 00:00:08.7820909.
+[2022-06-21 12:54:34Z INFO JobDispatcher] Worker finished for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171. Code: 102
+[2022-06-21 12:54:34Z INFO JobDispatcher] finish job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171 with result: Failed
+[2022-06-21 12:54:34Z INFO Terminal] WRITE LINE: 2022-06-21 12:54:34Z: Job unit-test completed with result: Failed
+[2022-06-21 12:54:34Z INFO JobDispatcher] Stop renew job request for job 0e10f8dd-85b5-5bee-19c6-47fc7db6f171.
+[2022-06-21 12:54:34Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 6.
+[2022-06-21 12:54:34Z INFO JobNotification] Entering JobCompleted Notification
+[2022-06-21 12:54:34Z INFO JobNotification] Entering EndMonitor
+[2022-06-21 13:24:32Z INFO MessageListener] No message retrieved from session 'dfce5a43-6775-4065-b34d-70cbae99dfac' within last 30 minutes.

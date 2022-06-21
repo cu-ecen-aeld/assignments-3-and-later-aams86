@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "cu-ecen-aeld/assignment-2-aams86",
+  "pipelineDirectory": "assignment-2-aams86",
+  "workspaceDirectory": "assignment-2-aams86/assignment-2-aams86",
+  "repositories": {
+    "cu-ecen-aeld/assignment-2-aams86": {
+      "repositoryPath": "assignment-2-aams86/assignment-2-aams86",
+      "lastRunOn": "06/21/2022 05:53:33 -07:00"
+    }
+  },
+  "lastRunOn": "06/21/2022 05:54:28 -07:00"
+}

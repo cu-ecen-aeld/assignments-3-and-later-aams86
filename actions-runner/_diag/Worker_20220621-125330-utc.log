@@ -1,0 +1,3268 @@
+[2022-06-21 12:53:30Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2022-06-21 12:53:30Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:30Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:30Z INFO HostContext] Well known config file 'Credentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials'
+[2022-06-21 12:53:30Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:30Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:30Z INFO HostContext] Well known config file 'Runner': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.runner'
+[2022-06-21 12:53:30Z INFO Worker] Version: 2.293.0
+[2022-06-21 12:53:30Z INFO Worker] Commit: 7785d8e1045339fbc88b92c9b506d35ed2b7523c
+[2022-06-21 12:53:30Z INFO Worker] Culture: 
+[2022-06-21 12:53:30Z INFO Worker] UI Culture: 
+[2022-06-21 12:53:30Z INFO Worker] Waiting to receive the job message from the channel.
+[2022-06-21 12:53:30Z INFO ProcessChannel] Receiving message of length 34743, with hash '6ecdef1c1e647a0f76f3666b57f91bbc99ce502961bf206d917b78fec716ef47'
+[2022-06-21 12:53:30Z INFO Worker] Message received.
+[2022-06-21 12:53:31Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/github-actions.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v2",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "a878fecf-9250-57e2-84e0-aae0213d4ecb",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 9,
+        "col": 19,
+        "lit": "Checkout submodules"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 10,
+              "col": 19,
+              "lit": "git submodule update --init --recursive"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "145553fb-1baa-5bc7-b18e-5469e21587f7",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 11,
+        "col": 19,
+        "lit": "Run unit test"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 12,
+              "col": 18,
+              "lit": "./unit-test.sh"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "8615dfaf-7ef8-510a-52bc-76337457853a",
+      "name": "__run_2"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": "en-US"
+    },
+    "system.pipelineStartTime": {
+      "value": "2022-06-21 12:53:26+00:00"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "1"
+    },
+    "build.containerId": {
+      "value": "52139"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/github-actions.yml"
+    },
+    "system.phaseDisplayName": {
+      "value": "unit-test"
+    },
+    "system.phaseId": {
+      "value": "f9b18aa4-1325-5d63-b757-65b914572d7c"
+    },
+    "system.phaseName": {
+      "value": "unit-test"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "unit-test.__default"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1"
+    },
+    "system.github.job": {
+      "value": "unit-test"
+    },
+    "system.jobDisplayName": {
+      "value": "unit-test"
+    },
+    "system.jobId": {
+      "value": "0e10f8dd-85b5-5bee-19c6-47fc7db6f171"
+    },
+    "system.jobName": {
+      "value": "__default"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Actions\":\"write\",\"Checks\":\"write\",\"Contents\":\"write\",\"Deployments\":\"write\",\"Discussions\":\"write\",\"Issues\":\"write\",\"Metadata\":\"read\",\"Packages\":\"write\",\"Pages\":\"write\",\"PullRequests\":\"write\",\"RepositoryProjects\":\"write\",\"SecurityEvents\":\"write\",\"Statuses\":\"write\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 26,
+    "planId": "630ea758-d1cc-4817-89f3-498f056a04cd",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/1",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "assignment-2-aams86"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "cu-ecen-aeld"
+    }
+  },
+  "timeline": {
+    "id": "630ea758-d1cc-4817-89f3-498f056a04cd",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "0e10f8dd-85b5-5bee-19c6-47fc7db6f171",
+  "jobDisplayName": "unit-test",
+  "jobName": "__default",
+  "jobContainer": {
+    "type": 0,
+    "file": 1,
+    "line": 5,
+    "col": 20,
+    "lit": "cuaesd/aesd-autotest:unit-test"
+  },
+  "requestId": 1,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "fd58f1e0-07ef-4d8a-b595-27880f9f2042",
+          "ServerName": "cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi/",
+          "FeedStreamUrl": "https://pipelines.actions.githubusercontent.com/cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/630ea758-d1cc-4817-89f3-498f056a04cd/timelines/630ea758-d1cc-4817-89f3-498f056a04cd/records/0e10f8dd-85b5-5bee-19c6-47fc7db6f171/feedstream?api-version=6.0-preview"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelines.actions.githubusercontent.com/cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "20b835ab2b59e3f8792613305fb6c3f4e1f452c1"
+        },
+        {
+          "k": "repository",
+          "v": "cu-ecen-aeld/assignment-2-aams86"
+        },
+        {
+          "k": "repository_owner",
+          "v": "cu-ecen-aeld"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "49594950"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/cu-ecen-aeld/assignment-2-aams86.git"
+        },
+        {
+          "k": "run_id",
+          "v": "2535458591"
+        },
+        {
+          "k": "run_number",
+          "v": "1"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_id",
+          "v": "505832992"
+        },
+        {
+          "k": "actor_id",
+          "v": "20014178"
+        },
+        {
+          "k": "actor",
+          "v": "aams86"
+        },
+        {
+          "k": "workflow",
+          "v": "assignment-test"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "20b835ab2b59e3f8792613305fb6c3f4e1f452c1"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "0000000000000000000000000000000000000000"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "daniel.walkes@colorado.edu"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "noreply@github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "GitHub"
+                              },
+                              {
+                                "k": "username",
+                                "v": "web-flow"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "be5241d556bb5d2485c5a52d12d623dbff3b68c8"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Merge pull request #1 from cu-ecen-5013/assignment1\n\nAssignment1 Fall 2020"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2020-05-23T17:41:49-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "2930004f4d74efe89226e870ac330d9d3267ca99"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/be5241d556bb5d2485c5a52d12d623dbff3b68c8"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "82b8514fcf42cfcc61f2253d3c3b87dd51fe5176"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Fix comments"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2020-06-21T17:42:08-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "40898c3cb93dc24402df8b806769af13aae858f0"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/82b8514fcf42cfcc61f2253d3c3b87dd51fe5176"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "f2eca01c0b9dc5b656ac299c5b6117518196130a"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Merge branch 'assignment1'"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2020-06-21T17:44:55-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "40898c3cb93dc24402df8b806769af13aae858f0"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/f2eca01c0b9dc5b656ac299c5b6117518196130a"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "807de20b9c7ab7b99500bffe3b7825e344d89ac1"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Latest test script\n\nBased on working assignment 4 implementation"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2020-08-11T23:21:11-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "edd55b0f726cbde5578022f6d72fbd3792fbd853"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/807de20b9c7ab7b99500bffe3b7825e344d89ac1"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "b52aed89fdfc409274d831f2374e2689b495825c"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Fall 21 assignment 1 cleanup"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2021-05-31T14:57:32-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "0538ab5ed1f1c991b52066a0218f860fc2f988b6"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/b52aed89fdfc409274d831f2374e2689b495825c"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "a81bb485c13a23687a72a87b6341114636019964"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Add github actions"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2021-05-31T15:02:39-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "d0a57781d1e0bf95e5a4e9ca3a6e9c558cd92bec"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/a81bb485c13a23687a72a87b6341114636019964"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "be364f31ee1ec19718f966dd6346ac40e657c8a2"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Fix paths in README"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2021-05-31T15:08:08-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "fca002028f306cb6ae6e2a178df9a6032e09c85a"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/be364f31ee1ec19718f966dd6346ac40e657c8a2"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "758fe00c474d7f1becbc9894997d7e2fec57b930"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Use shell script for finder implementation"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2021-05-31T15:25:03-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "868b084063b4cd0722079f82fdc36d0f202d81e8"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/758fe00c474d7f1becbc9894997d7e2fec57b930"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "91988a73ed022082ab13a4739bb38967fbb0a6db"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Use self hosted runner"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2021-06-05T16:46:10-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "b8de4e07d60806eeab50d781d8f0c8c91c1a5dc2"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/91988a73ed022082ab13a4739bb38967fbb0a6db"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "a84bd2d810fff69a6e21a10879860db565f5186f"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Latest assignment autotest repo"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2021-06-05T16:54:47-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "5c298a5a830d8ecfba988fb8e2faf560b658fb66"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/a84bd2d810fff69a6e21a10879860db565f5186f"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "daniel.walkes@colorado.edu"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "noreply@github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "GitHub"
+                              },
+                              {
+                                "k": "username",
+                                "v": "web-flow"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "6c8d30e60bf0d2931bf524197bacb49a5b4239f0"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Update README.md"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2021-08-21T16:56:29-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "f29d8d8b7b0c08f8e881816185b3fd8280848ee3"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/6c8d30e60bf0d2931bf524197bacb49a5b4239f0"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "daniel.walkes@colorado.edu"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "noreply@github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "GitHub"
+                              },
+                              {
+                                "k": "username",
+                                "v": "web-flow"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "90cabecdad0e7c0348bcba7fd084e0e17bc23af0"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Update README.md"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2021-08-28T10:27:47-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "ea234b138a9e5fe3f0064c0c68d45c39eaa43cf2"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/90cabecdad0e7c0348bcba7fd084e0e17bc23af0"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "1aca481f18519162ce075e2cc8e6a78abe505259"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Update assignment tests\n\nTo pull in fixes for assignment 1/2 autograder"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2021-09-05T16:15:11-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "0b407d3948ecf16cab65fe85e0e6479ffad95dcf"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/1aca481f18519162ce075e2cc8e6a78abe505259"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "walkes@colorado.edu"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "walkes@colorado.edu"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "3e2a9324591ac9828f52a045e675e05d526c1dc7"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Replace git checkout submodule action\n\nThis action is deprecated by the author and no longer works properly."
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2022-01-10T19:55:25-07:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "f80718f79d07cc3853e8cc4fc162ebcfc70e7054"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/3e2a9324591ac9828f52a045e675e05d526c1dc7"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "20217301897b6ec2459031e217f6965b6ea8d933"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Latest assignment autotest"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2022-05-13T17:42:42-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "62490c72fdbbded9706da3e2f57c55006cd05c4c"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/20217301897b6ec2459031e217f6965b6ea8d933"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "e861c03b391b1589e540b72386bde68105283aff"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Use updated path to assignment autotest submodule"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2022-05-22T16:07:19-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "4b61271129c506eab852a90e711207920b7e75b5"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/e861c03b391b1589e540b72386bde68105283aff"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "78dd304a3a05a1acc9854a1282f15c4b6fefd9b1"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Fix comment in CMakeLists"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2022-05-22T16:10:41-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "9be456d338a4df101d7f9657f1f511b7d1cfc015"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/78dd304a3a05a1acc9854a1282f15c4b6fefd9b1"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "6a407582f9d24351a29a5a8d2db2f041c0557d78"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Add unit test script"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2022-05-22T16:11:07-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "53e65c245ccc48a220f801adece9c9f7f4b99d7b"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/6a407582f9d24351a29a5a8d2db2f041c0557d78"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "akshita.bhasin@colorado.edu"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Akshita Bhasin"
+                              },
+                              {
+                                "k": "username",
+                                "v": "akshita-bhasin"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "danwalkes@trellis-logic.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Dan Walkes"
+                              },
+                              {
+                                "k": "username",
+                                "v": "dwalkes"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "f8ec53115d81ccaea8678899f3eb745a65a1cce1"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Updates for assignment 2"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2022-05-22T16:11:28-06:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "422fef7d70d770041bc5b67e4b9d0694f5fecf55"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/f8ec53115d81ccaea8678899f3eb745a65a1cce1"
+                        }
+                      ]
+                    },
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "aams86@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "aams86"
+                              },
+                              {
+                                "k": "username",
+                                "v": "aams86"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "aams86@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "aams86"
+                              },
+                              {
+                                "k": "username",
+                                "v": "aams86"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "20b835ab2b59e3f8792613305fb6c3f4e1f452c1"
+                        },
+                        {
+                          "k": "message",
+                          "v": "assignment-2 setup"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2022-06-21T05:37:17-07:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "c6e91e12132a6203665983dbf44ec0712761dd03"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/20b835ab2b59e3f8792613305fb6c3f4e1f452c1"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/compare/be5241d556bb^...20b835ab2b59"
+              },
+              {
+                "k": "created",
+                "v": true
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "aams86@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "aams86"
+                          },
+                          {
+                            "k": "username",
+                            "v": "aams86"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "aams86@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "aams86"
+                          },
+                          {
+                            "k": "username",
+                            "v": "aams86"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "20b835ab2b59e3f8792613305fb6c3f4e1f452c1"
+                    },
+                    {
+                      "k": "message",
+                      "v": "assignment-2 setup"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2022-06-21T05:37:17-07:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "c6e91e12132a6203665983dbf44ec0712761dd03"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86/commit/20b835ab2b59e3f8792613305fb6c3f4e1f452c1"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "organization",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/49594950?v=4"
+                    },
+                    {
+                      "k": "description",
+                      "v": "Course Github Organization for University of Colorado at Boulder ECEN 5713 Advanced Embedded Software Development (previously 5013-002)"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/events"
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/hooks"
+                    },
+                    {
+                      "k": "id",
+                      "v": 49594950.0
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/issues"
+                    },
+                    {
+                      "k": "login",
+                      "v": "cu-ecen-aeld"
+                    },
+                    {
+                      "k": "members_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/members{/member}"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDEyOk9yZ2FuaXphdGlvbjQ5NTk0OTUw"
+                    },
+                    {
+                      "k": "public_members_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/public_members{/member}"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld/repos"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/orgs/cu-ecen-aeld"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "aams86@gmail.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "aams86"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1655814390.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "assignment-2-aams86 created by GitHub Classroom"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "cu-ecen-aeld/assignment-2-aams86"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/cu-ecen-aeld/assignment-2-aams86.git"
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86"
+                    },
+                    {
+                      "k": "id",
+                      "v": 505832992.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": null
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "key",
+                            "v": "mit"
+                          },
+                          {
+                            "k": "name",
+                            "v": "MIT License"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDc6TGljZW5zZTEz"
+                          },
+                          {
+                            "k": "spdx_id",
+                            "v": "MIT"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/licenses/mit"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "assignment-2-aams86"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOHiZmIA"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "organization",
+                      "v": "cu-ecen-aeld"
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/49594950?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": null
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/cu-ecen-aeld"
+                          },
+                          {
+                            "k": "id",
+                            "v": 49594950.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "cu-ecen-aeld"
+                          },
+                          {
+                            "k": "name",
+                            "v": "cu-ecen-aeld"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDEyOk9yZ2FuaXphdGlvbjQ5NTk0OTUw"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "Organization"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/cu-ecen-aeld"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1655815237.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:cu-ecen-aeld/assignment-2-aams86.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/cu-ecen-aeld/assignment-2-aams86/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2022-06-21T12:26:30Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/cu-ecen-aeld/assignment-2-aams86"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/20014178?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/aams86/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/aams86/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/aams86/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/aams86/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/aams86"
+                    },
+                    {
+                      "k": "id",
+                      "v": 20014178.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "aams86"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjIwMDE0MTc4"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/aams86/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/aams86/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/aams86/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/aams86/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/aams86/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/aams86"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        }
+      ]
+    },
+    "needs": {
+      "t": 2
+    },
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    }
+  }
+}
+[2022-06-21 12:53:31Z INFO JobRunner] Job ID 0e10f8dd-85b5-5bee-19c6-47fc7db6f171
+[2022-06-21 12:53:31Z INFO JobRunner] Creating job server with URL: https://pipelines.actions.githubusercontent.com/cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi/
+[2022-06-21 12:53:31Z INFO ConfigurationStore] currentAssemblyLocation: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin/Runner.Worker.dll
+[2022-06-21 12:53:31Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:31Z INFO ConfigurationStore] binPath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin
+[2022-06-21 12:53:31Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:31Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:31Z INFO ConfigurationStore] RootFolder: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner
+[2022-06-21 12:53:31Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:31Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:31Z INFO HostContext] Well known config file 'Runner': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.runner'
+[2022-06-21 12:53:31Z INFO ConfigurationStore] ConfigFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.runner
+[2022-06-21 12:53:31Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:31Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:31Z INFO HostContext] Well known config file 'Credentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials'
+[2022-06-21 12:53:31Z INFO ConfigurationStore] CredFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials
+[2022-06-21 12:53:31Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:31Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:31Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_migrated'
+[2022-06-21 12:53:31Z INFO ConfigurationStore] MigratedCredFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_migrated
+[2022-06-21 12:53:31Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:31Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:31Z INFO HostContext] Well known config file 'Service': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.service'
+[2022-06-21 12:53:31Z INFO ConfigurationStore] ServiceConfigFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.service
+[2022-06-21 12:53:31Z INFO ConfigurationStore] Read setting file: 295 chars
+[2022-06-21 12:53:31Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-06-21 12:53:32Z INFO Worker] Listening for cancel message from the channel.
+[2022-06-21 12:53:32Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2022-06-21 12:53:32Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-06-21 12:53:33Z INFO JobServer] Creating websocket client ...wss://pipelines.actions.githubusercontent.com/cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/630ea758-d1cc-4817-89f3-498f056a04cd/timelines/630ea758-d1cc-4817-89f3-498f056a04cd/records/0e10f8dd-85b5-5bee-19c6-47fc7db6f171/feedstream?api-version=6.0-preview
+[2022-06-21 12:53:33Z INFO JobServer] Attempting to start websocket client with delay 00:00:00.
+[2022-06-21 12:53:33Z INFO JobServerQueue] Start process web console line queue.
+[2022-06-21 12:53:33Z INFO JobServerQueue] Start process file upload queue.
+[2022-06-21 12:53:33Z INFO JobServerQueue] Start process timeline update queue.
+[2022-06-21 12:53:33Z INFO ExecutionContext] Initialize GitHub context
+[2022-06-21 12:53:33Z INFO ExecutionContext] Initialize Env context
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:33Z INFO JobRunner] Starting the job execution context.
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:33Z INFO JobRunner] Validating directory permissions for: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Tools': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_tool'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Temp': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_temp'
+[2022-06-21 12:53:33Z INFO JobRunner] Getting job extension.
+[2022-06-21 12:53:33Z INFO JobRunner] Initialize job. Getting all job steps.
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known config file 'Credentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known config file 'SetupInfo': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.setup_info'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:33Z INFO PipelineDirectoryManager] Loading tracking config if exists: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_PipelineMapping/cu-ecen-aeld/assignment-2-aams86/PipelineFolder.json
+[2022-06-21 12:53:33Z INFO PipelineDirectoryManager] Creating a new tracking config file.
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:33Z INFO PipelineDirectoryManager] Creating pipeline directory.
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:33Z INFO PipelineDirectoryManager] Creating workspace directory.
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:33Z INFO JobServer] Successfully started websocket client.
+[2022-06-21 12:53:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'cef256e6-6bec-4baa-a812-48233c99c0aa', success rate: 1/1.
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Tools': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_tool'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Externals': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/externals'
+[2022-06-21 12:53:33Z INFO JobExtension] Downloading actions
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:33Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'cef256e6-6bec-4baa-a812-48233c99c0aa', success rate: 1/1.
+[2022-06-21 12:53:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'cef256e6-6bec-4baa-a812-48233c99c0aa', success rate: 1/1.
+[2022-06-21 12:53:34Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:34Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:34Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:34Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:34Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:34Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:34Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:34Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:34Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/tarball/7884fcad6b5d53d10323aee724dc68d8b9096a2e' into /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions/_temp_3fa3e5e4-b706-46cc-925e-206e3fa02556/29dc4b43-2890-43e9-bd4a-ebb6420d9c33.tar.gz.
+[2022-06-21 12:53:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'cef256e6-6bec-4baa-a812-48233c99c0aa', success rate: 1/1.
+[2022-06-21 12:53:34Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2022-06-21 12:53:35Z INFO ActionManager] Which: 'tar'
+[2022-06-21 12:53:35Z INFO ActionManager] Location: '/usr/bin/tar'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper] Starting process:
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions/_temp_3fa3e5e4-b706-46cc-925e-206e3fa02556/29dc4b43-2890-43e9-bd4a-ebb6420d9c33.tar.gz"'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Working directory: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions/_temp_3fa3e5e4-b706-46cc-925e-206e3fa02556/_staging'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 29260.
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper] Process started with process id 29260, waiting for process exit.
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper] Finished process 29260 with exit code 0, and elapsed time 00:00:00.0553554.
+[2022-06-21 12:53:35Z INFO ActionManager] Finished getting action repository.
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:35Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:35Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2022-06-21 12:53:35Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:35Z INFO ActionManager] Load action that reference repository from '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions/actions/checkout/v2'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Actions': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_actions'
+[2022-06-21 12:53:35Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2022-06-21 12:53:35Z INFO ActionManager] Action pre node.js file: N/A.
+[2022-06-21 12:53:35Z INFO ActionManager] Action node.js file: dist/index.js.
+[2022-06-21 12:53:35Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2022-06-21 12:53:35Z INFO DockerCommandManager] Which: 'docker'
+[2022-06-21 12:53:35Z INFO DockerCommandManager] Location: '/usr/bin/docker'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:35Z INFO JobExtension] Adding .
+[2022-06-21 12:53:35Z INFO JobExtension] Adding .
+[2022-06-21 12:53:35Z INFO JobExtension] Adding .
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:35Z INFO JobExtension] Total accessible running process: 155.
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Work': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work'
+[2022-06-21 12:53:35Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "cef256e6-6bec-4baa-a812-48233c99c0aa",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 3
+}.
+[2022-06-21 12:53:35Z INFO JobRunner] Total job steps: 4.
+[2022-06-21 12:53:35Z INFO JobRunner] Run all job steps.
+[2022-06-21 12:53:35Z INFO StepsRunner] Processing step: DisplayName='Initialize containers'
+[2022-06-21 12:53:35Z INFO StepsRunner] Evaluating: success()
+[2022-06-21 12:53:35Z INFO StepsRunner] Result: true
+[2022-06-21 12:53:35Z INFO StepsRunner] Starting the step.
+[2022-06-21 12:53:35Z INFO ExecutionContext] Reserve record order 6 to 10 for post job actions.
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:35Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper] Starting process:
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/docker'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Arguments: 'version --format '{{.Server.APIVersion}}''
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Working directory: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/assignment-2-aams86/assignment-2-aams86'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 29263.
+[2022-06-21 12:53:35Z INFO ProcessInvokerWrapper] Process started with process id 29263, waiting for process exit.
+[2022-06-21 12:53:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e11bac21-bc31-4e7b-8f7f-884900851e88', success rate: 1/1.
+[2022-06-21 12:53:36Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2022-06-21 12:53:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:37Z INFO ProcessInvokerWrapper] Finished process 29263 with exit code 1, and elapsed time 00:00:01.3598520.
+[2022-06-21 12:53:37Z ERR  StepsRunner] Caught exception from step: GitHub.Runner.Sdk.ProcessExitCodeException: Exit code 1 returned from process: file name '/usr/bin/docker', arguments 'version --format '{{.Server.APIVersion}}''.
+   at GitHub.Runner.Sdk.ProcessInvoker.ExecuteAsync(String workingDirectory, String fileName, String arguments, IDictionary`2 environment, Boolean requireExitCodeZero, Encoding outputEncoding, Boolean killProcessOnCancel, Channel`1 redirectStandardIn, Boolean inheritConsoleHandler, Boolean keepStandardInOpen, Boolean highPriorityProcess, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.ProcessInvokerWrapper.ExecuteAsync(String workingDirectory, String fileName, String arguments, IDictionary`2 environment, Boolean requireExitCodeZero, Encoding outputEncoding, Boolean killProcessOnCancel, Channel`1 redirectStandardIn, Boolean inheritConsoleHandler, Boolean keepStandardInOpen, Boolean highPriorityProcess, CancellationToken cancellationToken)
+   at GitHub.Runner.Worker.Container.DockerCommandManager.ExecuteDockerCommandAsync(IExecutionContext context, String command, String options)
+   at GitHub.Runner.Worker.Container.DockerCommandManager.DockerVersion(IExecutionContext context)
+   at GitHub.Runner.Worker.ContainerOperationProvider.AssertCompatibleOS(IExecutionContext executionContext)
+   at GitHub.Runner.Worker.ContainerOperationProvider.StartContainersAsync(IExecutionContext executionContext, Object data)
+   at GitHub.Runner.Worker.JobExtensionRunner.RunAsync()
+   at GitHub.Runner.Worker.StepsRunner.RunStepAsync(IStep step, CancellationToken jobCancellationToken)
+[2022-06-21 12:53:37Z INFO StepsRunner] Step result: Failed
+[2022-06-21 12:53:37Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "initialize_containers",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "e11bac21-bc31-4e7b-8f7f-884900851e88",
+  "result": "failed",
+  "errorMessages": [
+    "Exit code 1 returned from process: file name '/usr/bin/docker', arguments 'version --format '{{.Server.APIVersion}}''."
+  ],
+  "executionTimeInSeconds": 2
+}.
+[2022-06-21 12:53:37Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2022-06-21 12:53:37Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-06-21 12:53:37Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v2'
+[2022-06-21 12:53:37Z INFO StepsRunner] Evaluating: success()
+[2022-06-21 12:53:37Z INFO StepsRunner] Result: false
+[2022-06-21 12:53:37Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2022-06-21 12:53:37Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2022-06-21 12:53:37Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-06-21 12:53:37Z INFO StepsRunner] Processing step: DisplayName='Checkout submodules'
+[2022-06-21 12:53:37Z INFO StepsRunner] Evaluating: success()
+[2022-06-21 12:53:37Z INFO StepsRunner] Result: false
+[2022-06-21 12:53:37Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2022-06-21 12:53:37Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2022-06-21 12:53:37Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-06-21 12:53:37Z INFO StepsRunner] Processing step: DisplayName='Run unit test'
+[2022-06-21 12:53:37Z INFO StepsRunner] Evaluating: success()
+[2022-06-21 12:53:37Z INFO StepsRunner] Result: false
+[2022-06-21 12:53:37Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2022-06-21 12:53:37Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2022-06-21 12:53:37Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-06-21 12:53:37Z INFO StepsRunner] Processing step: DisplayName='Stop containers'
+[2022-06-21 12:53:37Z INFO StepsRunner] Evaluating: always()
+[2022-06-21 12:53:37Z INFO StepsRunner] Result: true
+[2022-06-21 12:53:37Z INFO StepsRunner] Starting the step.
+[2022-06-21 12:53:37Z ERR  StepsRunner] Caught exception from step: System.ArgumentNullException: Value cannot be null. (Parameter 'network')
+   at GitHub.Runner.Sdk.ArgUtil.NotNull(Object value, String name)
+   at GitHub.Runner.Worker.ContainerOperationProvider.RemoveContainerNetworkAsync(IExecutionContext executionContext, String network)
+   at GitHub.Runner.Worker.ContainerOperationProvider.StopContainersAsync(IExecutionContext executionContext, Object data)
+   at GitHub.Runner.Worker.JobExtensionRunner.RunAsync()
+   at GitHub.Runner.Worker.StepsRunner.RunStepAsync(IStep step, CancellationToken jobCancellationToken)
+[2022-06-21 12:53:37Z INFO StepsRunner] Step result: Failed
+[2022-06-21 12:53:37Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2022-06-21 12:53:37Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-06-21 12:53:37Z INFO JobRunner] Finalize job.
+[2022-06-21 12:53:37Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:37Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:37Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:37Z INFO JobExtension] Initialize Env context
+[2022-06-21 12:53:37Z INFO JobExtension] Initialize steps context
+[2022-06-21 12:53:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e11bac21-bc31-4e7b-8f7f-884900851e88', success rate: 1/1.
+[2022-06-21 12:53:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'ead10e1f-50a8-43c0-a82f-877d5d77e99e', success rate: 1/1.
+[2022-06-21 12:53:37Z INFO JobExtension] Total accessible running process: 156.
+[2022-06-21 12:53:37Z INFO JobExtension] Inspecting process environment variables. PID: 28333 (kworker/u8:1-brcmf_wq/mmc1:0001:1)
+[2022-06-21 12:53:37Z INFO LinuxProcessExtensions] Read env from /proc/28333/environ
+[2022-06-21 12:53:37Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/28333/environ' is denied.
+[2022-06-21 12:53:37Z INFO JobExtension] Inspecting process environment variables. PID: 28898 (kworker/2:1-events)
+[2022-06-21 12:53:37Z INFO LinuxProcessExtensions] Read env from /proc/28898/environ
+[2022-06-21 12:53:37Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/28898/environ' is denied.
+[2022-06-21 12:53:37Z INFO JobExtension] Inspecting process environment variables. PID: 29104 (kworker/3:3-events)
+[2022-06-21 12:53:37Z INFO LinuxProcessExtensions] Read env from /proc/29104/environ
+[2022-06-21 12:53:37Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/29104/environ' is denied.
+[2022-06-21 12:53:37Z INFO JobExtension] Inspecting process environment variables. PID: 29113 (kworker/u8:2-events_power_efficient)
+[2022-06-21 12:53:37Z INFO LinuxProcessExtensions] Read env from /proc/29113/environ
+[2022-06-21 12:53:37Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/29113/environ' is denied.
+[2022-06-21 12:53:37Z INFO JobExtension] Inspecting process environment variables. PID: 29216 (kworker/1:0-mm_percpu_wq)
+[2022-06-21 12:53:37Z INFO LinuxProcessExtensions] Read env from /proc/29216/environ
+[2022-06-21 12:53:37Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/29216/environ' is denied.
+[2022-06-21 12:53:37Z INFO JobExtension] Inspecting process environment variables. PID: 29264 (kworker/0:2H)
+[2022-06-21 12:53:37Z INFO LinuxProcessExtensions] Read env from /proc/29264/environ
+[2022-06-21 12:53:37Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/29264/environ' is denied.
+[2022-06-21 12:53:37Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "5ffe902a-f18b-4daa-ac92-44b367ef1fe4",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1
+}.
+[2022-06-21 12:53:37Z INFO JobRunner] Job result after all job steps finish: Failed
+[2022-06-21 12:53:37Z INFO JobRunner] Completing the job execution context.
+[2022-06-21 12:53:37Z INFO JobRunner] Shutting down the job server queue.
+[2022-06-21 12:53:37Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2022-06-21 12:53:37Z INFO JobServerQueue] All queue process task stopped.
+[2022-06-21 12:53:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record '5ffe902a-f18b-4daa-ac92-44b367ef1fe4', success rate: 1/1.
+[2022-06-21 12:53:37Z INFO JobServerQueue] Web console line queue drained.
+[2022-06-21 12:53:37Z INFO JobServerQueue] Uploading 4 files in one shot.
+[2022-06-21 12:53:38Z INFO JobServerQueue] Try to upload 4 log files or attachments, success rate: 4/4.
+[2022-06-21 12:53:38Z INFO JobServerQueue] File upload queue drained.
+[2022-06-21 12:53:38Z INFO JobServerQueue] Timeline update queue drained.
+[2022-06-21 12:53:38Z INFO JobServerQueue] Disposing job server ...
+[2022-06-21 12:53:38Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2022-06-21 12:53:38Z INFO TempDirectoryManager] Cleaning runner temp folder: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_work/_temp
+[2022-06-21 12:53:38Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:38Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:38Z INFO HostContext] Well known directory 'Diag': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag'
+[2022-06-21 12:53:38Z INFO HostContext] Well known config file 'Telemetry': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/_diag/.telemetry'
+[2022-06-21 12:53:38Z INFO JobRunner] Raising job completed event
+[2022-06-21 12:53:38Z INFO Worker] Job completed.

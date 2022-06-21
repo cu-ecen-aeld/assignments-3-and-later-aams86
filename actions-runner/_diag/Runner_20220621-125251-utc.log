@@ -1,0 +1,227 @@
+[2022-06-21 12:52:51Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:52:51Z INFO HostContext] Well known config file 'Credentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials'
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:52:51Z INFO HostContext] Well known config file 'Runner': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.runner'
+[2022-06-21 12:52:51Z INFO Listener] Runner is built for Linux (Arm) - linux-arm.
+[2022-06-21 12:52:51Z INFO Listener] RuntimeInformation: Linux 5.4.0-1052-raspi #58-Ubuntu SMP PREEMPT Mon Feb 7 16:56:27 UTC 2022.
+[2022-06-21 12:52:51Z INFO Listener] Version: 2.293.0
+[2022-06-21 12:52:51Z INFO Listener] Commit: 7785d8e1045339fbc88b92c9b506d35ed2b7523c
+[2022-06-21 12:52:51Z INFO Listener] Culture: 
+[2022-06-21 12:52:51Z INFO Listener] UI Culture: 
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:52:51Z INFO Listener] Validating directory permissions for: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:52:51Z INFO CommandLineParser] Parse
+[2022-06-21 12:52:51Z INFO CommandLineParser] Parsing 5 args
+[2022-06-21 12:52:51Z INFO CommandLineParser] parsing argument
+[2022-06-21 12:52:51Z INFO CommandLineParser] HasArgs: False
+[2022-06-21 12:52:51Z INFO CommandLineParser] Adding Command: configure
+[2022-06-21 12:52:51Z INFO CommandLineParser] parsing argument
+[2022-06-21 12:52:51Z INFO CommandLineParser] HasArgs: True
+[2022-06-21 12:52:51Z INFO CommandLineParser] arg: url
+[2022-06-21 12:52:51Z INFO CommandLineParser] parsing argument
+[2022-06-21 12:52:51Z INFO CommandLineParser] HasArgs: True
+[2022-06-21 12:52:51Z INFO CommandLineParser] Adding option 'url': 'https://github.com/cu-ecen-aeld/assignment-2-aams86'
+[2022-06-21 12:52:51Z INFO CommandLineParser] parsing argument
+[2022-06-21 12:52:51Z INFO CommandLineParser] HasArgs: True
+[2022-06-21 12:52:51Z INFO CommandLineParser] arg: token
+[2022-06-21 12:52:51Z INFO CommandLineParser] parsing argument
+[2022-06-21 12:52:51Z INFO CommandLineParser] HasArgs: True
+[2022-06-21 12:52:51Z INFO CommandLineParser] Adding option 'token': '***'
+[2022-06-21 12:52:51Z INFO Listener] Arguments parsed
+[2022-06-21 12:52:51Z INFO Runner] ExecuteCommand
+[2022-06-21 12:52:51Z INFO ConfigurationStore] currentAssemblyLocation: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin/Runner.Listener.dll
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:52:51Z INFO ConfigurationStore] binPath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:52:51Z INFO ConfigurationStore] RootFolder: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:52:51Z INFO HostContext] Well known config file 'Runner': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.runner'
+[2022-06-21 12:52:51Z INFO ConfigurationStore] ConfigFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.runner
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:52:51Z INFO HostContext] Well known config file 'Credentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials'
+[2022-06-21 12:52:51Z INFO ConfigurationStore] CredFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:52:51Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_migrated'
+[2022-06-21 12:52:51Z INFO ConfigurationStore] MigratedCredFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_migrated
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:52:51Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:52:51Z INFO HostContext] Well known config file 'Service': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.service'
+[2022-06-21 12:52:51Z INFO ConfigurationStore] ServiceConfigFilePath: /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.service
+[2022-06-21 12:52:51Z INFO CommandSettings] Flag 'help': 'False'
+[2022-06-21 12:52:51Z INFO CommandSettings] Flag 'version': 'False'
+[2022-06-21 12:52:51Z INFO CommandSettings] Flag 'commit': 'False'
+[2022-06-21 12:52:51Z INFO CommandSettings] Flag 'check': 'False'
+[2022-06-21 12:52:51Z INFO CommandSettings] Command 'configure': 'True'
+[2022-06-21 12:52:51Z INFO Terminal] WRITE LINE: 
+[2022-06-21 12:52:51Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2022-06-21 12:52:51Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2022-06-21 12:52:51Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2022-06-21 12:52:51Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2022-06-21 12:52:51Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2022-06-21 12:52:51Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2022-06-21 12:52:51Z INFO Terminal] WRITE LINE: |                                                                              |
+[2022-06-21 12:52:51Z INFO Terminal] WRITE: |                       
+[2022-06-21 12:52:51Z INFO Terminal] WRITE: Self-hosted runner registration
+[2022-06-21 12:52:51Z INFO Terminal] WRITE LINE:                         |
+[2022-06-21 12:52:51Z INFO Terminal] WRITE LINE: |                                                                              |
+[2022-06-21 12:52:51Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2022-06-21 12:52:51Z INFO ConfigurationManager] ConfigureAsync
+[2022-06-21 12:52:51Z INFO ConfigurationStore] IsConfigured()
+[2022-06-21 12:52:51Z INFO ConfigurationStore] IsConfigured: False
+[2022-06-21 12:52:51Z INFO ConfigurationManager] Is configured: False
+[2022-06-21 12:52:51Z INFO CommandSettings] Arg 'url': 'https://github.com/cu-ecen-aeld/assignment-2-aams86'
+[2022-06-21 12:52:51Z INFO CommandSettings] Remove url from Arg dictionary.
+[2022-06-21 12:52:52Z INFO CommandSettings] Arg 'token': '***'
+[2022-06-21 12:52:52Z INFO CommandSettings] Remove token from Arg dictionary.
+[2022-06-21 12:52:53Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration'
+[2022-06-21 12:52:53Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2022-06-21 12:52:53Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2022-06-21 12:52:53Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-06-21 12:52:53Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-06-21 12:52:53Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-06-21 12:52:53Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-06-21 12:52:53Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-06-21 12:52:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-06-21 12:52:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-06-21 12:52:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-06-21 12:52:54Z INFO Terminal] WRITE LINE: 
+[2022-06-21 12:52:54Z INFO ConfigurationManager] Test Connection complete.
+[2022-06-21 12:52:54Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:52:54Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:52:54Z INFO HostContext] Well known config file 'RSACredentials': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams'
+[2022-06-21 12:52:54Z INFO RSAFileKeyManager] Creating new RSA key using 2048-bit key length
+[2022-06-21 12:52:57Z INFO RSAFileKeyManager] Successfully saved RSA key parameters to file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:52:57Z INFO RSAFileKeyManager] Which: 'chmod'
+[2022-06-21 12:52:57Z INFO RSAFileKeyManager] Location: '/usr/bin/chmod'
+[2022-06-21 12:52:57Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:52:57Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper] Starting process:
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/chmod'
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper]   Arguments: '600 /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams'
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper]   Working directory: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper] Process started with process id 29213, waiting for process exit.
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:52:57Z INFO ProcessInvokerWrapper] Finished process 29213 with exit code 0, and elapsed time 00:00:00.0193173.
+[2022-06-21 12:52:57Z INFO RSAFileKeyManager] Successfully set permissions for RSA key parameters file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:52:57Z INFO CommandSettings] Arg 'runnergroup': ''
+[2022-06-21 12:52:57Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-06-21 12:52:57Z INFO PromptManager] ReadValue
+[2022-06-21 12:52:57Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2022-06-21 12:52:57Z INFO Terminal] WRITE: [press Enter for Default] 
+[2022-06-21 12:52:57Z INFO Terminal] READ LINE
+[2022-06-21 12:53:01Z INFO Terminal] Read value: ''
+[2022-06-21 12:53:01Z INFO PromptManager] Falling back to the default: 'Default'
+[2022-06-21 12:53:01Z INFO Terminal] WRITE LINE: 
+[2022-06-21 12:53:01Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2022-06-21 12:53:01Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2022-06-21 12:53:01Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-06-21 12:53:01Z INFO CommandSettings] Arg 'name': ''
+[2022-06-21 12:53:01Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-06-21 12:53:01Z INFO PromptManager] ReadValue
+[2022-06-21 12:53:01Z INFO Terminal] WRITE: Enter the name of runner: 
+[2022-06-21 12:53:01Z INFO Terminal] WRITE: [press Enter for rpi002] 
+[2022-06-21 12:53:01Z INFO Terminal] READ LINE
+[2022-06-21 12:53:03Z INFO Terminal] Read value: ''
+[2022-06-21 12:53:03Z INFO PromptManager] Falling back to the default: 'rpi002'
+[2022-06-21 12:53:03Z INFO Terminal] WRITE LINE: 
+[2022-06-21 12:53:03Z INFO CommandSettings] Arg 'labels': ''
+[2022-06-21 12:53:03Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-06-21 12:53:03Z INFO PromptManager] ReadValue
+[2022-06-21 12:53:03Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Linux', 'ARM' 
+Enter any additional labels (ex. label-1,label-2): 
+[2022-06-21 12:53:03Z INFO Terminal] WRITE: [press Enter to skip] 
+[2022-06-21 12:53:03Z INFO Terminal] READ LINE
+[2022-06-21 12:53:06Z INFO Terminal] Read value: ''
+[2022-06-21 12:53:06Z INFO Terminal] WRITE LINE: 
+[2022-06-21 12:53:07Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2022-06-21 12:53:07Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2022-06-21 12:53:07Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-06-21 12:53:07Z INFO ConfigurationStore] Saving OAuth credential @ /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials
+[2022-06-21 12:53:07Z INFO ConfigurationStore] Credentials Saved.
+[2022-06-21 12:53:07Z INFO ConfigurationStore] HasCredentials()
+[2022-06-21 12:53:07Z INFO ConfigurationStore] stored True
+[2022-06-21 12:53:07Z INFO CredentialManager] GetCredentialProvider
+[2022-06-21 12:53:07Z INFO CredentialManager] Creating type OAuth
+[2022-06-21 12:53:07Z INFO CredentialManager] Creating credential type: OAuth
+[2022-06-21 12:53:07Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:53:07Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2022-06-21 12:53:07Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-06-21 12:53:07Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-06-21 12:53:07Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-06-21 12:53:07Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-06-21 12:53:07Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-06-21 12:53:07Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-06-21 12:53:07Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-06-21 12:53:08Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-06-21 12:53:08Z WARN GitHubActionsService] Authentication failed with status code 401.
+Transfer-Encoding: chunked
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: b1e0701c-9187-49b8-ac8e-e6655fbd01b5
+ActivityId: ff9378c1-a541-4bb5-b3e9-64fb2590c87d
+X-TFS-Session: 4d3b3c12-0bc7-46bc-8f0a-51057ee41282
+X-VSS-E2EID: 84bb8937-6f5a-4935-a632-0468d8f288bc
+X-VSS-SenderDeploymentId: fc1cfc90-fc40-edcb-6d0f-3b1380ee7b68
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: E1A6738825DE4298B1618501AA3D408F Ref B: LAX311000113029 Ref C: 2022-06-21T12:53:08Z
+Date: Tue, 21 Jun 2022 12:53:07 GMT
+
+[2022-06-21 12:53:08Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:53:08Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/pi/git_workspaces2/assignment-1-aams86/actions-runner/.credentials_rsaparams
+[2022-06-21 12:53:08Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2022-06-21 12:53:08Z INFO CommandSettings] Arg 'work': ''
+[2022-06-21 12:53:08Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-06-21 12:53:08Z INFO PromptManager] ReadValue
+[2022-06-21 12:53:08Z INFO Terminal] WRITE: Enter name of work folder: 
+[2022-06-21 12:53:08Z INFO Terminal] WRITE: [press Enter for _work] 
+[2022-06-21 12:53:08Z INFO Terminal] READ LINE
+[2022-06-21 12:53:11Z INFO Terminal] Read value: ''
+[2022-06-21 12:53:11Z INFO PromptManager] Falling back to the default: '_work'
+[2022-06-21 12:53:11Z INFO ConfigurationStore] Saving runner settings.
+[2022-06-21 12:53:11Z INFO ConfigurationStore] Settings Saved.
+[2022-06-21 12:53:11Z INFO Terminal] WRITE LINE: 
+[2022-06-21 12:53:11Z INFO Terminal] WRITE LINE: 
+[2022-06-21 12:53:11Z INFO SystemDControlManager] Service name 'actions.runner.cu-ecen-aeld-assignment-2-aams86.rpi002.service' display name 'GitHub Actions Runner (cu-ecen-aeld-assignment-2-aams86.rpi002)' will be used for service configuration.
+[2022-06-21 12:53:11Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:11Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:11Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:11Z INFO HostContext] Well known directory 'Bin': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/bin'
+[2022-06-21 12:53:11Z INFO HostContext] Well known directory 'Root': '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:11Z INFO UnixUtil] Which: 'chmod'
+[2022-06-21 12:53:11Z INFO UnixUtil] Location: '/usr/bin/chmod'
+[2022-06-21 12:53:11Z INFO UnixUtil] Running /usr/bin/chmod 755 "/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/svc.sh"
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper] Starting process:
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/chmod'
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper]   Arguments: '755 "/home/pi/git_workspaces2/assignment-1-aams86/actions-runner/svc.sh"'
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper]   Working directory: '/home/pi/git_workspaces2/assignment-1-aams86/actions-runner'
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 29215.
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper] Process started with process id 29215, waiting for process exit.
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-06-21 12:53:11Z INFO ProcessInvokerWrapper] Finished process 29215 with exit code 0, and elapsed time 00:00:00.0029399.
+[2022-06-21 12:53:11Z INFO Listener] Runner execution has finished with return code 0

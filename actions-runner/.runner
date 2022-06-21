@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "rpi002",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/cw1SAbqTS8M4zd0euK7xNDFzwnTfh5lv3fAV5wVJNsGUywFrEi",
+  "gitHubUrl": "https://github.com/cu-ecen-aeld/assignment-2-aams86",
+  "workFolder": "_work"
+}
