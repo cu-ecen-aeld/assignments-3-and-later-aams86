@@ -54,20 +54,20 @@ bool do_exec(int count, ...)
     // this line is to avoid a compile warning before your implementation is complete
     // and may be removed
     command[count] = command[count];
-    pid_t terminate_pid = -1;
-    pid_t child_pid = fork();
-    if((int)child_pid == 0) {
-        int exit_status = execv(command[0], command);
-        exit(exit_status != 0);
+/*
+    pid_t pid = fork();
+    if((int)pid == 0) {
+       //execv(command[0], command);
+      // _exit(execv(command[0], command));
+       exit((execv(command[0], command) == -1)? -1 : 0);
     }
-    int status = -1;
-    while(terminate_pid != child_pid) {
-    	terminate_pid = wait(&status);
-    }
+    int status = 0;
+    wait(&status);
+
     va_end(args);
 
     return (status == 0);
-
+*/
 
 /*
  * TODO:
@@ -78,6 +78,27 @@ bool do_exec(int count, ...)
  *   as second argument to the execv() command.
  *
 */
+
+    int child_status;
+    pid_t terminate_pid;
+    pid_t child_pid = fork();
+    if (child_pid == 0) 
+    {
+        exit((execv(command[0], command) == -1)? -1 : 0);
+    }
+    else
+    {
+        do
+        {
+            terminate_pid = wait(&child_status);
+        }
+        while (terminate_pid != child_pid);
+    }
+
+    va_end(args);
+
+    return (child_status == 0)? true : false;
+
 
 }
 
