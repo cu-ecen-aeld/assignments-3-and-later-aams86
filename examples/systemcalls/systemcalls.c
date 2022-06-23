@@ -1,5 +1,8 @@
 #include "systemcalls.h"
-
+#include <sys/wait.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
 /**
  * @param cmd the command to execute with system()
  * @return true if the command in @param cmd was executed
@@ -16,8 +19,11 @@ bool do_system(const char *cmd)
  *   and return a boolean true if the system() call completed with success
  *   or false() if it returned a failure
 */
-
-    return true;
+    bool retval = false;
+    if(system(cmd)==0) {
+        retval = true;
+    }
+    return retval;
 }
 
 /**
@@ -48,6 +54,20 @@ bool do_exec(int count, ...)
     // this line is to avoid a compile warning before your implementation is complete
     // and may be removed
     command[count] = command[count];
+    pid_t terminate_pid = -1;
+    pid_t child_pid = fork();
+    if((int)child_pid == 0) {
+        int exit_status = execv(command[0], command);
+        exit(exit_status != 0);
+    }
+    int status = -1;
+    while(terminate_pid != child_pid) {
+    	terminate_pid = wait(&status);
+    }
+    va_end(args);
+
+    return (status == 0);
+
 
 /*
  * TODO:
@@ -59,9 +79,6 @@ bool do_exec(int count, ...)
  *
 */
 
-    va_end(args);
-
-    return true;
 }
 
 /**
@@ -83,8 +100,18 @@ bool do_exec_redirect(const char *outputfile, int count, ...)
     // this line is to avoid a compile warning before your implementation is complete
     // and may be removed
     command[count] = command[count];
+    pid_t pid = fork();
+    if((int)pid == 0) {
 
+        int fd = open(outputfile, O_WRONLY|O_TRUNC|O_CREAT, 0644);
+        if (fd < 0) { perror("open"); abort(); }
 
+        if (dup2(fd, 1) < 0) { perror("dup2"); abort(); }
+        close(fd);
+        execv(command[0], command); perror("execvp"); abort();
+        close(fd);
+    }
+    wait(NULL);
 /*
  * TODO
  *   Call execv, but first using https://stackoverflow.com/a/13784315/1446624 as a refernce,
